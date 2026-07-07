@@ -843,9 +843,9 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       <tr>
         <td>April 2026</td>
         <td class="num">322</td>
-        <td class="num" style="color:var(--blue);font-weight:700">95</td>
+        <td class="num" style="color:var(--blue);font-weight:700">64</td>
         <td class="num">100</td>
-        <td class="num" style="color:var(--green)">85</td>
+        <td class="num" style="color:var(--green)">116</td>
         <td class="num" style="color:var(--orange)">30</td>
         <td class="num">12</td>
         <td class="num" style="color:var(--red)">▼ -3%</td>
@@ -853,9 +853,9 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       <tr>
         <td>May 2026</td>
         <td class="num">345</td>
-        <td class="num" style="color:var(--blue);font-weight:700">90</td>
+        <td class="num" style="color:var(--blue);font-weight:700">92</td>
         <td class="num">110</td>
-        <td class="num" style="color:var(--green)">105</td>
+        <td class="num" style="color:var(--green)">103</td>
         <td class="num" style="color:var(--orange)">30</td>
         <td class="num">10</td>
         <td class="num" style="color:var(--green)">▲ +7%</td>
@@ -863,9 +863,9 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       <tr>
         <td>June 2026</td>
         <td class="num">316</td>
-        <td class="num" style="color:var(--blue);font-weight:700">84</td>
+        <td class="num" style="color:var(--blue);font-weight:700">62</td>
         <td class="num">95</td>
-        <td class="num" style="color:var(--green)">101</td>
+        <td class="num" style="color:var(--green)">123</td>
         <td class="num" style="color:var(--orange);font-weight:700">16</td>
         <td class="num">20</td>
         <td class="num" style="color:var(--orange)">▼ -8%</td>
@@ -873,9 +873,9 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       <tr style="background:#F8FAFC;font-weight:700">
         <td>TOTAL (Dec–Jun)</td>
         <td class="num">2,009</td>
-        <td class="num" style="color:var(--blue)">609</td>
+        <td class="num" style="color:var(--blue)">558</td>
         <td class="num">683</td>
-        <td class="num" style="color:var(--green)">496</td>
+        <td class="num" style="color:var(--green)">547</td>
         <td class="num" style="color:var(--orange)">150</td>
         <td class="num">71</td>
         <td class="num"></td>
@@ -883,9 +883,9 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       <tr style="background:#F8FAFC;font-style:italic;color:var(--muted)">
         <td>Share of total</td>
         <td class="num"></td>
-        <td class="num">30%</td>
+        <td class="num">28%</td>
         <td class="num">34%</td>
-        <td class="num">25%</td>
+        <td class="num">27%</td>
         <td class="num">7%</td>
         <td class="num">4%</td>
         <td class="num"></td>
@@ -895,44 +895,50 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
   <div class="section-title" style="margin-top:32px">Why Did June Calls Drop? Full Cross-Channel Analysis</div>
   <div class="alert warning">
-    <strong>The June call drop is real but small — and it is not an organic or demand problem.</strong>
-    <p>Three data sources tell a consistent story: GSC clicks only dropped 14%, Website SEO calls (the organic channel) stayed flat at 84, and GMB calls actually stayed strong at 101. The drop is concentrated in Google Local Services Ads, which fell from 30 to 16 calls (-47%). That single channel accounts for most of the overall decline.</p>
+    <strong>The June call drop has two causes: GLS Ads pulled back hard, and Website SEO calls also slipped.</strong>
+    <p>GLS Ads dropped from 30 to 16 calls (-47%) and Website SEO calls dropped from 92 to 62 (-33%). Together those two channels account for the entire -29 call decline. GMB calls actually grew from 103 to 123 (+19%), which shows local pack demand is still strong. This is a paid + organic traffic issue, not a demand collapse.</p>
   </div>
 
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px">
-    <div style="background:#FEF2F2;border-radius:8px;padding:16px;border-left:4px solid var(--red)">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px">
+    <div style="background:#FEF2F2;border-radius:8px;padding:14px;border-left:4px solid var(--red)">
       <div style="font-size:20px;font-weight:800;color:var(--red)">-47%</div>
       <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">GLS Ads Calls</div>
-      <div style="font-size:11px;color:var(--muted)">30 May → 16 June</div>
-      <div style="font-size:11px;color:var(--red);margin-top:6px;font-weight:600">Biggest single driver of the June drop. GLS is pay-per-lead — if budget paused or bids adjusted, calls stop fast.</div>
+      <div style="font-size:11px;color:var(--muted)">30 May → 16 June (-14 calls)</div>
+      <div style="font-size:11px;color:var(--red);margin-top:6px;font-weight:600">GLS is pay-per-lead. If budget paused or lead quality slipped, Google throttles delivery fast.</div>
     </div>
-    <div style="background:#FFFBEB;border-radius:8px;padding:16px;border-left:4px solid var(--orange)">
+    <div style="background:#FEF2F2;border-radius:8px;padding:14px;border-left:4px solid var(--red)">
+      <div style="font-size:20px;font-weight:800;color:var(--red)">-33%</div>
+      <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">Website SEO Calls</div>
+      <div style="font-size:11px;color:var(--muted)">92 May → 62 June (-30 calls)</div>
+      <div style="font-size:11px;color:var(--red);margin-top:6px;font-weight:600">Organic calls dropped more than GSC clicks (-14%). Worth investigating — could be a tracking number issue or conversion friction on the site.</div>
+    </div>
+    <div style="background:#FFFBEB;border-radius:8px;padding:14px;border-left:4px solid var(--orange)">
       <div style="font-size:20px;font-weight:800;color:var(--orange)">-14%</div>
       <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">Google Ads Calls</div>
-      <div style="font-size:11px;color:var(--muted)">110 May → 95 June</div>
-      <div style="font-size:11px;color:var(--orange);margin-top:6px;font-weight:600">Moderate drop, consistent with paid campaign seasonal pullback or budget reallocation.</div>
+      <div style="font-size:11px;color:var(--muted)">110 May → 95 June (-15 calls)</div>
+      <div style="font-size:11px;color:var(--orange);margin-top:6px;font-weight:600">Moderate drop, consistent with paid campaign budget pullback or seasonal slowdown.</div>
     </div>
-    <div style="background:#F0FDF4;border-radius:8px;padding:16px;border-left:4px solid var(--green)">
-      <div style="font-size:20px;font-weight:800;color:var(--green)">Stable</div>
-      <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">Website SEO + GMB</div>
-      <div style="font-size:11px;color:var(--muted)">84 WSE + 101 GMB in June</div>
-      <div style="font-size:11px;color:var(--green);margin-top:6px;font-weight:600">Organic and local pack performance held. No signs of demand softening or ranking drops.</div>
+    <div style="background:#F0FDF4;border-radius:8px;padding:14px;border-left:4px solid var(--green)">
+      <div style="font-size:20px;font-weight:800;color:var(--green)">+19%</div>
+      <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">GMB Calls</div>
+      <div style="font-size:11px;color:var(--muted)">103 May → 123 June (+20 calls)</div>
+      <div style="font-size:11px;color:var(--green);margin-top:6px;font-weight:600">Local pack is the bright spot. GBP is driving more calls in June than any other single channel.</div>
     </div>
   </div>
 
   <div class="card" style="margin-bottom:24px">
-    <h4>Channel Source Mix: June vs. May vs. December</h4>
+    <h4>Channel Source Mix — June 2026 (316 total calls)</h4>
     <div style="margin-top:12px">
       <div style="display:grid;grid-template-columns:140px 1fr 80px;gap:4px;align-items:center;margin-bottom:6px;font-size:12px;font-weight:700;color:var(--muted)">
-        <span>Source</span><span>June share</span><span style="text-align:right">Jun calls</span>
+        <span>Source</span><span>June share</span><span style="text-align:right">Calls</span>
       </div>
-      <div class="channel-bar"><span class="channel-name">Website SEO</span><div class="bar-wrap"><div class="bar-fill" style="width:27%;background:var(--blue)"><span>27%</span></div></div><span class="channel-count">84</span></div>
+      <div class="channel-bar"><span class="channel-name">Google My Business</span><div class="bar-wrap"><div class="bar-fill" style="width:39%;background:var(--green)"><span>39%</span></div></div><span class="channel-count">123</span></div>
       <div class="channel-bar"><span class="channel-name">Google Ads</span><div class="bar-wrap"><div class="bar-fill" style="width:30%;background:var(--red)"><span>30%</span></div></div><span class="channel-count">95</span></div>
-      <div class="channel-bar"><span class="channel-name">Google My Business</span><div class="bar-wrap"><div class="bar-fill" style="width:32%;background:var(--green)"><span>32%</span></div></div><span class="channel-count">101</span></div>
-      <div class="channel-bar"><span class="channel-name">Google Local Services</span><div class="bar-wrap"><div class="bar-fill" style="width:5%;background:var(--orange)"><span>5%</span></div></div><span class="channel-count">16</span></div>
+      <div class="channel-bar"><span class="channel-name">Website SEO</span><div class="bar-wrap"><div class="bar-fill" style="width:20%;background:var(--blue)"><span>20%</span></div></div><span class="channel-count">62</span></div>
       <div class="channel-bar"><span class="channel-name">Landing / Other</span><div class="bar-wrap"><div class="bar-fill" style="width:6%;background:var(--muted)"><span>6%</span></div></div><span class="channel-count">20</span></div>
+      <div class="channel-bar"><span class="channel-name">Google Local Services</span><div class="bar-wrap"><div class="bar-fill" style="width:5%;background:var(--orange)"><span>5%</span></div></div><span class="channel-count">16</span></div>
     </div>
-    <p style="font-size:12px;color:var(--muted);margin-top:12px">Note: GMB is now the single largest call source at 32% of June volume — bigger than Website SEO (27%) or Google Ads (30%). This is a healthy sign. Local pack and GBP content are working.</p>
+    <p style="font-size:12px;color:var(--muted);margin-top:12px">GMB is the single largest call source in June at 39% — bigger than Google Ads (30%) or Website SEO (20%). Investing in GBP content and reviews has a direct impact on call volume.</p>
   </div>
 
   <div class="section-title">Call Quality: Flagged Calls to Review</div>
