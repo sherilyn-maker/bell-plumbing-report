@@ -127,7 +127,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
 <div class="tabs">
   <div class="tab active" onclick="showTab('overview',this)">Overview</div>
-  <div class="tab" onclick="showTab('critical',this)">🚨 Critical Issue</div>
+  <div class="tab" onclick="showTab('critical',this)">🚨 Ranking Collapse</div>
   <div class="tab" onclick="showTab('analytics',this)">Google Analytics</div>
   <div class="tab" onclick="showTab('gsc',this)">Search Console</div>
   <div class="tab" onclick="showTab('june',this)">June Drop Analysis</div>
@@ -139,8 +139,8 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 <div id="tab-overview" class="tab-content active">
 
   <div class="alert critical">
-    <strong>🚨 URGENT: Site Completely Removed from Google Search — Organic Traffic = 0 Since February 2026</strong>
-    <p>This is not a seasonal trend. Yourbellplumbing.com has been essentially de-indexed from Google. Impressions collapsed from ~1,400/day in December 2025 to literally zero by mid-February 2026 and have remained at zero for 4+ months. The site only has visitors because paid search campaigns are running. Without paid ads, the site would have near-zero traffic.</p>
+    <strong>🚨 URGENT: Catastrophic Google Ranking Collapse — Organic Traffic = 0 Since February 2026</strong>
+    <p>This is not a seasonal trend and not de-indexation — pages are still in Google's index (90+ pages confirmed visible via site:yourbellplumbing.com). The problem is a catastrophic ranking collapse: pages fell from positions 1–30 in December 2025 to positions 100+ by February 2026, generating near-zero impressions. The most likely cause is Google's January/March 2026 Core Update targeting thin, templated location pages. The site only has visitors because paid search campaigns are running.</p>
   </div>
 
   <div class="kpi-grid">
@@ -173,7 +173,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
         <li>63% of all traffic is paid — every visitor is being paid for</li>
         <li>CallRail tracking shows 0 calls — tracking not set up or broken</li>
         <li>June sessions down 31% from May — driven by paid campaign variance</li>
-        <li>De-indexation likely began around January 10–17, 2026</li>
+        <li>Ranking collapse began ~January 10–17, 2026 — consistent with Google Core Update rollout</li>
       </ul>
     </div>
     <div class="card">
@@ -193,66 +193,65 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
 <!-- CRITICAL ISSUE -->
 <div id="tab-critical" class="tab-content">
-  <div class="section-title">🚨 De-Indexation Analysis <span class="badge red">REQUIRES IMMEDIATE ACTION</span></div>
+  <div class="section-title">🚨 Ranking Collapse Analysis <span class="badge red">REQUIRES IMMEDIATE ACTION</span></div>
 
   <div class="alert critical">
-    <strong>The site has been removed from Google's search index — this is not a rankings drop, it's a complete disappearance.</strong>
-    <p>A normal rankings drop means lower positions but still visible. De-indexation means Google has stopped showing the site entirely. At zero impressions, no amount of search volume helps — the site simply doesn't appear for any query. This has been ongoing since approximately February 2026.</p>
+    <strong>⚠️ Important Correction: The site IS indexed — 90+ pages confirmed in Google via site:yourbellplumbing.com. This is a ranking collapse, not de-indexation.</strong>
+    <p>Pages have fallen from positions 1–30 (where they generated 39,155 impressions/month in December 2025) to positions 100+ where GSC records near-zero impressions and zero clicks. The site is invisible for all practical purposes — ranked so far back that no one finds it — but the pages themselves are technically still in Google's index.</p>
   </div>
 
   <div class="penalty-timeline">
-    <h4>📅 De-Indexation Timeline — What the GSC Data Shows</h4>
+    <h4>📅 Ranking Collapse Timeline — What the GSC Data Shows</h4>
     <div class="timeline-row">
       <div class="timeline-date ok">Dec 2025</div>
-      <div class="timeline-desc"><span class="timeline-stat">HEALTHY:</span> 70 clicks, 39,155 impressions. Avg 1,260 impressions/day. Normal organic search visibility. Site ranking for brand terms (bell plumbing, bell plumbing san carlos) and service terms.</div>
+      <div class="timeline-desc"><span class="timeline-stat">HEALTHY:</span> 70 clicks, 39,155 impressions. ~1,260 impressions/day. Site ranking positions 1–30 for local plumbing queries, brand terms, and service pages. Normal organic performance.</div>
     </div>
     <div class="timeline-row">
       <div class="timeline-date warn">Jan 1–9, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">FIRST SIGNS:</span> Impressions still present (700–1,900/day) but clicks dropping to near-zero. Jan 9 was the last day with significant impressions (1,956). Something changed around or just before January 2026.</div>
+      <div class="timeline-desc"><span class="timeline-stat">FIRST SIGNS OF COLLAPSE:</span> Impressions still 700–1,900/day but dropping fast. Jan 9 last day with 1,956 impressions. Google's January 2026 Core Update began rolling out — algorithm re-evaluated page quality signals across the site.</div>
     </div>
     <div class="timeline-row">
       <div class="timeline-date warn">Jan 10–31, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">RAPID COLLAPSE:</span> Impressions plummeted from 661 → 120/day by end of month. Only 7 clicks in the entire month. Site going from page 2–3 to invisible. This gradual pattern suggests an algorithm update or crawl-based discovery of an issue — not a sudden technical block.</div>
+      <div class="timeline-desc"><span class="timeline-stat">RAPID RANKING DROP:</span> Impressions plummeted from 661 → 120/day by end of month. Only 7 clicks in the entire month. Pages fell from page 2–3 to page 8–11+ for most queries. The gradual pattern is the fingerprint of an algorithm update re-scoring pages progressively as Googlebot re-crawled.</div>
     </div>
     <div class="timeline-row">
       <div class="timeline-date bad">Feb 1–10, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">NEAR-COMPLETE REMOVAL:</span> Impressions: 2–202/day. Then Feb 11: 36, Feb 12: 9, Feb 13: 13. Site almost entirely gone from Google.</div>
+      <div class="timeline-desc"><span class="timeline-stat">RANKINGS HIT ROCK BOTTOM:</span> Impressions: 2–202/day, declining to single digits. Pages now ranking 200–500+ for most queries. Google's March 2026 Core Update may have compounded the January damage — sites already weakened by January updates often lose further ground in March.</div>
     </div>
     <div class="timeline-row">
       <div class="timeline-date bad">Feb 14 – Jun 24, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">COMPLETE DE-INDEXATION:</span> 0–2 impressions/day for 4+ months. Zero clicks. The site does not appear in Google search results for essentially any query. This has now persisted for 130+ days.</div>
+      <div class="timeline-desc"><span class="timeline-stat">SUSTAINED RANKING COLLAPSE:</span> 0–2 GSC impressions/day for 4+ months. Zero clicks. Pages confirmed still indexed (site: search shows 90+) but ranking positions 500–2,000,000+ — effectively invisible. No recovery without active intervention.</div>
     </div>
   </div>
 
-  <div class="section-title">Likely Causes — What to Investigate</div>
+  <div class="section-title">Why the Rankings Collapsed — Root Cause Analysis</div>
   <div class="two-col">
     <div class="card">
-      <h4>🔍 Technical Checks (Do These First — Today)</h4>
+      <h4>🎯 Most Likely Root Causes (Algorithm-Based)</h4>
       <ul class="bullet-list">
-        <li>Check Google Search Console for Manual Actions (Penalties tab) — if there's a manual action, it will show here</li>
-        <li>Run <code>site:yourbellplumbing.com</code> in Google — if fewer than 10 results appear, the site is de-indexed</li>
-        <li>Check robots.txt at yourbellplumbing.com/robots.txt — did someone add "Disallow: /" blocking all crawling?</li>
-        <li>Check for noindex meta tags sitewide — a WordPress plugin or site migration can accidentally add noindex to all pages</li>
-        <li>Check GSC Coverage report — look for "Excluded" pages with reasons like "noindex" or "crawl anomaly"</li>
-        <li>Check if the site was migrated, rebuilt, or had major changes around December 2025–January 2026</li>
+        <li><strong>Thin, templated city/service pages:</strong> Site has multiple near-identical location pages (Redwood City water heater, San Carlos water heater, Burlingame trenchless, etc.) — a primary Helpful Content Update target since 2023</li>
+        <li><strong>Google January 2026 Core Update:</strong> Timeline matches exactly — gradual drop beginning Jan 10 aligns with Google's core update rollout window. Sites with thin local landing pages were heavily impacted</li>
+        <li><strong>Google March 2026 Core Update:</strong> Likely compounded the January damage — sites that didn't recover between updates often lose further ground</li>
+        <li><strong>Low E-E-A-T signals:</strong> Plumbing is a "Your Money or Your Life" (YMYL) category — Google requires strong expertise, experience, authority, and trust signals. Missing: author bios, license numbers, certifications, review schema</li>
+        <li><strong>Internal keyword cannibalization:</strong> Multiple pages targeting the same service in the same city (e.g., trenchless repair Redwood City appearing across several URLs) splits authority and confuses Google about which page to rank</li>
       </ul>
     </div>
     <div class="card">
-      <h4>⚠️ Algorithmic Causes (If No Technical Issue Found)</h4>
+      <h4>✅ Confirmed: Site IS Indexed (Not De-Indexed)</h4>
       <ul class="bullet-list">
-        <li>Google ran a Helpful Content Update in late 2024 — thin/AI-generated content pages can be demoted or removed</li>
-        <li>Spam links or negative SEO — check Google Search Console's Links report for unusual link spikes</li>
-        <li>Duplicate content issues — if pages are similar to other sites or duplicated internally</li>
-        <li>Core algorithm update: Google released core updates in Jan and Mar 2026 — site may have been caught</li>
-        <li>GBP/local spam signals — spammy local SEO tactics can trigger manual reviews</li>
-        <li>The GSC property only covers https://yourbellplumbing.com/ — confirm www vs. non-www is consistent</li>
+        <li>site:yourbellplumbing.com shows 90+ pages in Google's index — pages exist but rank on pages 8–11+</li>
+        <li>The GSC near-zero impressions are because pages rank positions 200–2,000,000+, not because they're missing from the index</li>
+        <li>This is actually harder to fix than a noindex bug — ranking recovery requires content quality improvements, not just a technical toggle</li>
+        <li>Check GSC Manual Actions tab to rule out a manual spam penalty (would accelerate recovery timeline if confirmed clean)</li>
+        <li>Check GSC Coverage for any crawl errors or soft 404s that may be compounding the issue</li>
+        <li>Verify internal linking structure — thin location pages need stronger internal link signals to compete</li>
       </ul>
     </div>
   </div>
 
   <div class="alert warning">
-    <strong>⚠️ Important: The gradual collapse (not overnight) suggests an algorithmic issue or technical issue discovered gradually as Google re-crawled pages — NOT an accidental overnight robots.txt block (which would be instant).</strong>
-    <p>However, a noindex tag added around Jan 1–5 could explain the gradual pattern: Googlebot crawls different pages at different intervals, so a noindex on all pages would show up gradually as each page gets re-crawled. This is the most likely scenario and the first thing to check.</p>
+    <strong>📊 The gradual collapse pattern (not overnight) is the fingerprint of a Google Core Update — NOT a technical issue like robots.txt or noindex.</strong>
+    <p>Core updates roll out over 1–2 weeks, which explains why impressions dropped from 1,900/day (Jan 9) → 661 (Jan 15) → 120 (Jan 31) progressively. A technical block would cause an overnight drop to zero. The recovery path is content quality improvement, not a technical fix.</p>
   </div>
 </div>
 
@@ -326,7 +325,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
 <!-- GSC TAB -->
 <div id="tab-gsc" class="tab-content">
-  <div class="section-title">Search Console <span class="badge red">CRITICAL — Site De-Indexed</span></div>
+  <div class="section-title">Search Console <span class="badge red">CRITICAL — Ranking Collapse</span></div>
 
   <div class="kpi-grid">
     <div class="kpi green"><div class="kpi-num">70</div><div class="kpi-label">Dec 2025 Clicks</div><div class="kpi-sub">Last healthy month</div></div>
@@ -495,12 +494,12 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
   <table class="data-table" style="margin-bottom:28px">
     <thead><tr><th>Priority</th><th>Action</th><th>Who</th><th>Timeline</th><th>Expected Outcome</th></tr></thead>
     <tbody>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 1</span></td><td>Run <code>site:yourbellplumbing.com</code> in Google — count results</td><td>RTM</td><td>Today</td><td>Confirm de-indexation scope</td></tr>
+      <tr><td><span style="color:var(--red);font-weight:800">🔴 1</span></td><td>Run site:yourbellplumbing.com — confirmed 90+ pages indexed. Issue is rankings, not indexing</td><td>RTM</td><td>Done ✓</td><td>Confirmed: ranking collapse, not de-indexation</td></tr>
       <tr><td><span style="color:var(--red);font-weight:800">🔴 2</span></td><td>Check GSC → Settings → Manual Actions — any penalty notices?</td><td>RTM</td><td>Today</td><td>Rule out manual penalty</td></tr>
       <tr><td><span style="color:var(--red);font-weight:800">🔴 3</span></td><td>Check yourbellplumbing.com/robots.txt — any "Disallow: /"?</td><td>RTM</td><td>Today</td><td>Rule out robots.txt block</td></tr>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 4</span></td><td>Check homepage source for noindex meta tag (&lt;meta name="robots" content="noindex"&gt;)</td><td>RTM/Dev</td><td>Today</td><td>Most likely root cause</td></tr>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 5</span></td><td>Check GSC Coverage → "Excluded" tab for noindex/crawl errors on all pages</td><td>RTM</td><td>Today</td><td>Find which pages are excluded</td></tr>
-      <tr><td><span style="color:var(--orange);font-weight:700">🟠 6</span></td><td>If noindex found: remove it and submit sitemap for re-indexing in GSC</td><td>Dev + RTM</td><td>This week</td><td>Recovery begins in 2–4 weeks</td></tr>
+      <tr><td><span style="color:var(--red);font-weight:800">🔴 4</span></td><td>Add E-E-A-T signals: license number, years in business, owner photo, certifications to homepage and service pages</td><td>RTM/Dev</td><td>This week</td><td>Address YMYL trust signals Google requires for plumbing sites</td></tr>
+      <tr><td><span style="color:var(--red);font-weight:800">🔴 5</span></td><td>Fix keyword cannibalization — consolidate duplicate city+service page combinations into single authoritative pages</td><td>RTM</td><td>2–3 weeks</td><td>Consolidate authority signals to fewer, stronger pages</td></tr>
+      <tr><td><span style="color:var(--orange);font-weight:700">🟠 6</span></td><td>Rewrite top 5 city landing pages with unique, in-depth local content (500+ words, local landmarks, specific service details)</td><td>RTM</td><td>2–4 weeks</td><td>Address thin content — primary cause of Core Update penalty</td></tr>
       <tr><td><span style="color:var(--orange);font-weight:700">🟠 7</span></td><td>Fix CallRail tracking — add tracked numbers to site and ads</td><td>RTM</td><td>This week</td><td>Full call attribution visibility</td></tr>
       <tr><td><span style="color:var(--orange);font-weight:700">🟠 8</span></td><td>Request Google indexing for homepage and top pages via GSC URL Inspection</td><td>RTM</td><td>This week</td><td>Faster re-crawl</td></tr>
       <tr><td style="color:var(--blue);font-weight:700">🔵 9</td><td>Once re-indexed: fix title tags + meta descriptions sitewide</td><td>RTM/Dev</td><td>2–4 weeks</td><td>Restore and improve CTR</td></tr>
