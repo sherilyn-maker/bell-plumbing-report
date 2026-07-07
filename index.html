@@ -139,6 +139,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
   <div class="tab" onclick="showTab('gsc',this)">Search Console</div>
   <div class="tab" onclick="showTab('june',this)">June Drop Analysis</div>
   <div class="tab" onclick="showTab('callrail',this)">CallRail</div>
+  <div class="tab" onclick="showTab('ai',this)">🤖 AI Search</div>
   <div class="tab" onclick="showTab('action',this)">Action Plan</div>
 </div>
 
@@ -853,6 +854,164 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
         <li>Look into the +1266696687 number. Could be an internal test line</li>
       </ul>
     </div>
+  </div>
+</div>
+
+<!-- AI SEARCH TAB -->
+<div id="tab-ai" class="tab-content">
+  <div class="section-title">🤖 AI Search Analysis <span class="badge green">Emerging Channel</span></div>
+
+  <div class="alert info">
+    <strong>AI Assistant traffic appeared for the first time on June 10, 2026 and reached 38 sessions by month end.</strong>
+    <p>This is referral traffic from tools like ChatGPT, Perplexity, Google Gemini, and Microsoft Copilot — users who asked an AI assistant for a plumber recommendation and clicked through to the site. It is a new channel and the numbers are small right now, but it is growing and plumbing is one of the highest-intent categories for AI referrals. Local service businesses that show up in AI results early will have a real advantage.</p>
+  </div>
+
+  <div class="kpi-grid">
+    <div class="kpi green"><div class="kpi-num">38</div><div class="kpi-label">AI Assistant Sessions</div><div class="kpi-sub">June 2026 — first full month</div></div>
+    <div class="kpi"><div class="kpi-num">Jun 10</div><div class="kpi-label">First Appeared</div><div class="kpi-sub">Channel was zero before this date</div></div>
+    <div class="kpi"><div class="kpi-num">1.2%</div><div class="kpi-label">Share of June Traffic</div><div class="kpi-sub">38 of 3,122 sessions</div></div>
+    <div class="kpi orange"><div class="kpi-num">~3x</div><div class="kpi-label">AI Search Growth Rate</div><div class="kpi-sub">Industry-wide YoY trend</div></div>
+  </div>
+
+  <div class="section-title">Why the June Session Drop: Trends vs. AI</div>
+  <div class="card" style="margin-bottom:24px">
+    <h4>Breaking Down the June Drop by Channel</h4>
+    <div style="margin-top:12px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+      <div style="background:#FEF2F2;border-radius:8px;padding:14px;border-left:4px solid var(--red)">
+        <div style="font-size:22px;font-weight:800;color:var(--red)">−38%</div>
+        <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">Total GA4 Sessions</div>
+        <div style="font-size:11px;color:var(--muted)">5,003 May → 3,122 June</div>
+        <div style="font-size:11px;color:var(--red);margin-top:6px;font-weight:600">Driven almost entirely by paid search pullback</div>
+      </div>
+      <div style="background:#FFFBEB;border-radius:8px;padding:14px;border-left:4px solid var(--orange)">
+        <div style="font-size:22px;font-weight:800;color:var(--orange)">−14%</div>
+        <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">GSC Organic Clicks</div>
+        <div style="font-size:11px;color:var(--muted)">208 May → 178 June</div>
+        <div style="font-size:11px;color:var(--orange);margin-top:6px;font-weight:600">Small, normal seasonal softening</div>
+      </div>
+      <div style="background:#F0FDF4;border-radius:8px;padding:14px;border-left:4px solid var(--green)">
+        <div style="font-size:22px;font-weight:800;color:var(--green)">−8%</div>
+        <div style="font-size:12px;font-weight:700;color:var(--text);margin:4px 0">CallRail Calls</div>
+        <div style="font-size:11px;color:var(--muted)">345 May → 316 June</div>
+        <div style="font-size:11px;color:var(--green);margin-top:6px;font-weight:600">Barely moved — demand held up</div>
+      </div>
+    </div>
+    <div style="margin-top:16px;padding:12px 16px;background:#F8FAFC;border-radius:8px;font-size:13px;line-height:1.7">
+      <strong>The verdict:</strong> The June drop is a paid campaign story, not a demand story. Sessions dropped 38% but calls only dropped 8%. If there had been a real drop in plumbing demand — from seasonality or AI diverting searches — calls would have dropped proportionally too. They did not. The most likely explanation: the paid budget was scaled back or campaign optimization tightened targeting in June, which cut lower-quality session volume while preserving lead quality. The organic channel (only −14% in GSC clicks) and the call volume both confirm demand stayed healthy.
+    </div>
+  </div>
+
+  <div class="section-title">Could AI Be Intercepting Searches?</div>
+  <div class="two-col" style="margin-bottom:24px">
+    <div class="card">
+      <h4>What AI is Likely Taking Away</h4>
+      <ul class="bullet-list warn">
+        <li><strong>Informational queries:</strong> "How long does a water heater last?" or "What causes a sewer belly?" — these used to send clicks to blog posts. Now many users get the answer directly from AI without clicking anywhere</li>
+        <li><strong>Comparison and how-to searches:</strong> "Trenchless vs traditional sewer repair" — these drove impressions for the site in March but AI answers are reducing click-through on these</li>
+        <li><strong>Price-check queries:</strong> "How much does a plumber cost in San Carlos" — AI gives a ballpark and users do not always click to verify</li>
+        <li><strong>The March impression spike theory:</strong> March's 178K impressions with relatively low CTR (0.15%) may partly reflect Google showing the site's content as AI Overview source material — impressions recorded, but the user got the answer in the SERP and did not click</li>
+        <li><strong>Broad awareness queries:</strong> "Best plumber near me" is shifting to AI assistants in some demographics, especially 25–44 year olds</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>What AI Is NOT Taking Away</h4>
+      <ul class="bullet-list">
+        <li><strong>Emergency plumbing searches:</strong> "Plumber open now San Carlos" — people with a burst pipe want to call immediately. AI cannot fix a burst pipe and users know it</li>
+        <li><strong>Branded searches:</strong> "Bell Plumbing" searches still go to Google and the site. Existing customers and referrals are not going through AI</li>
+        <li><strong>High-intent local searches:</strong> "Plumbers san carlos" at position 11 — these users want a phone number, not an AI answer</li>
+        <li><strong>Phone calls:</strong> AI does not intercept calls. The 316 June calls confirm that when people want a plumber, they still pick up the phone</li>
+        <li><strong>Google Maps and Local Pack:</strong> AI is not yet replacing the local pack for service businesses. Map results are still the dominant conversion path for local plumbing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-title">How AI Assistants Decide to Recommend a Local Business</div>
+  <div class="penalty-timeline" style="margin-bottom:24px">
+    <h4>The AI Recommendation Funnel — What Influences Whether Bell Plumbing Gets Mentioned</h4>
+    <div class="timeline-row">
+      <div class="timeline-date ok">Step 1</div>
+      <div class="timeline-desc"><span class="timeline-stat">Reviews and Reputation:</span> AI tools pull heavily from Google reviews, Yelp, and other review platforms. The number of reviews, recency, and average rating all influence whether an AI will suggest a business by name. This is the single biggest factor for local service businesses.</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-date ok">Step 2</div>
+      <div class="timeline-desc"><span class="timeline-stat">Google Business Profile completeness:</span> AI tools (especially Google Gemini and ChatGPT with browsing enabled) check GBP data. A fully completed GBP — with services listed, hours, photos, Q&A answered — gets picked up and surfaced more reliably than an incomplete one.</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-date ok">Step 3</div>
+      <div class="timeline-desc"><span class="timeline-stat">Website content clarity:</span> AI reads the site to understand what services are offered, what areas are covered, and how to contact the business. Clear, direct content with specific service names and city names is what gets pulled into AI summaries. Vague or templated content gets ignored.</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-date ok">Step 4</div>
+      <div class="timeline-desc"><span class="timeline-stat">Structured data (schema markup):</span> LocalBusiness, Plumber, and FAQPage schema tells AI tools exactly what the business does, where it operates, and what questions it answers. Sites with schema get cited more accurately in AI responses.</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-date warn">Step 5</div>
+      <div class="timeline-desc"><span class="timeline-stat">Local citations and authority:</span> Mentions in local directories (Yelp, Angi, HomeAdvisor, BBB) and local news sites signal to AI that the business is legitimate and established. NAP consistency (Name, Address, Phone) across all listings is critical.</div>
+    </div>
+    <div class="timeline-row">
+      <div class="timeline-date warn">Step 6</div>
+      <div class="timeline-desc"><span class="timeline-stat">Topical authority on the website:</span> Sites that publish expert content on specific plumbing topics — sewer repair, water heater maintenance, local regulations — are more likely to be cited as authoritative sources. The "shared sewer line responsibility" blog post already demonstrates this model works.</div>
+    </div>
+  </div>
+
+  <div class="section-title">AI Search Optimization Recommendations</div>
+  <table class="data-table" style="margin-bottom:28px">
+    <thead><tr><th>Action</th><th>Why It Matters for AI</th><th>Effort</th><th>Timeline</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><strong>Get to 100+ Google reviews (with responses)</strong></td>
+        <td>Reviews are the primary signal AI tools use when recommending local service businesses. Responding to reviews also signals engagement and legitimacy</td>
+        <td><span style="background:#DCFCE7;color:#166534;padding:2px 8px;border-radius:8px;font-size:11px">Low</span></td>
+        <td>Ongoing</td>
+      </tr>
+      <tr>
+        <td><strong>Add LocalBusiness + Plumber schema to every page</strong></td>
+        <td>Structured data is how AI tools parse who the business is, what they do, and where. Without it, the AI has to guess from the page text — and often gets it wrong</td>
+        <td><span style="background:#FEF9C3;color:#854D0E;padding:2px 8px;border-radius:8px;font-size:11px">Medium</span></td>
+        <td>2 weeks</td>
+      </tr>
+      <tr>
+        <td><strong>Add FAQPage schema to the sewer and water heater pages</strong></td>
+        <td>FAQ schema content gets pulled directly into AI answers. When a user asks an AI "how does trenchless sewer repair work," it can cite the site's FAQ and link back to it</td>
+        <td><span style="background:#FEF9C3;color:#854D0E;padding:2px 8px;border-radius:8px;font-size:11px">Medium</span></td>
+        <td>2–3 weeks</td>
+      </tr>
+      <tr>
+        <td><strong>Rewrite service pages with a direct "What we do / Who we serve / How to contact us" structure</strong></td>
+        <td>AI reads pages looking for clear answers to implied questions. Pages that bury the service list in paragraph text score lower in AI extraction than pages with clear headers and bullets</td>
+        <td><span style="background:#FEF9C3;color:#854D0E;padding:2px 8px;border-radius:8px;font-size:11px">Medium</span></td>
+        <td>3–4 weeks</td>
+      </tr>
+      <tr>
+        <td><strong>Complete and verify Google Business Profile with every service category</strong></td>
+        <td>Gemini AI uses GBP as a primary data source for local recommendations. Missing service categories and unverified listings get skipped</td>
+        <td><span style="background:#DCFCE7;color:#166534;padding:2px 8px;border-radius:8px;font-size:11px">Low</span></td>
+        <td>This week</td>
+      </tr>
+      <tr>
+        <td><strong>Publish 4–6 expert Q&A blog posts per quarter</strong></td>
+        <td>Perplexity, ChatGPT, and Gemini all surface blog content when answering plumbing questions. Posts that directly answer "Can trenchless repair fix a sewer belly?" or "How long do water heaters last in San Mateo County?" get cited and linked</td>
+        <td><span style="background:#FEE2E2;color:#991B1B;padding:2px 8px;border-radius:8px;font-size:11px">High</span></td>
+        <td>Ongoing</td>
+      </tr>
+      <tr>
+        <td><strong>Audit and clean up all local directory listings (Yelp, Angi, BBB, HomeAdvisor)</strong></td>
+        <td>NAP inconsistencies across directories confuse AI tools. Consistent citations across 10+ directories reinforce that the business is real and trustworthy</td>
+        <td><span style="background:#FEF9C3;color:#854D0E;padding:2px 8px;border-radius:8px;font-size:11px">Medium</span></td>
+        <td>2 weeks</td>
+      </tr>
+      <tr>
+        <td><strong>Track AI channel in GA4 as a separate segment going forward</strong></td>
+        <td>The 38 June sessions are just the beginning. Knowing exactly which AI tools are sending traffic helps prioritize optimization efforts for each platform</td>
+        <td><span style="background:#DCFCE7;color:#166534;padding:2px 8px;border-radius:8px;font-size:11px">Low</span></td>
+        <td>This week</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="alert success">
+    <strong>✅ The 38 AI sessions in June are a green light, not a footnote.</strong>
+    <p>Most local plumbing sites are seeing zero AI referral traffic right now. Bell Plumbing is already appearing in AI assistant results one month into the channel showing up in GA4. Getting the schema, GBP, and Q&A content in order now — before competitors do — locks in a position in AI results while the space is still uncrowded. AI search is not replacing emergency call traffic. It is adding a new discovery layer on top of it.</p>
   </div>
 </div>
 
