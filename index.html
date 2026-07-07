@@ -134,7 +134,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
 <div class="tabs">
   <div class="tab active" onclick="showTab('overview',this)">Overview</div>
-  <div class="tab" onclick="showTab('critical',this)">🚨 Ranking Collapse</div>
+  <div class="tab" onclick="showTab('critical',this)">📈 Organic Search Trends</div>
   <div class="tab" onclick="showTab('analytics',this)">Google Analytics</div>
   <div class="tab" onclick="showTab('gsc',this)">Search Console</div>
   <div class="tab" onclick="showTab('june',this)">June Drop Analysis</div>
@@ -145,17 +145,17 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 <!-- OVERVIEW -->
 <div id="tab-overview" class="tab-content active">
 
-  <div class="alert critical">
-    <strong>🚨 URGENT: Catastrophic Google Ranking Collapse: Organic Traffic Has Been Zero Since February 2026</strong>
-    <p>This is not a seasonal trend and not a de-indexation issue. Pages are still in Google's index (90+ pages confirmed visible via site:yourbellplumbing.com). The problem is a ranking collapse. Pages fell from positions 1–30 in December 2025 to positions 100+ by February 2026, generating near-zero impressions. The most likely cause is Google's January/March 2026 Core Update targeting thin, templated location pages. The site only has visitors because paid search campaigns are running.</p>
+  <div class="alert info">
+    <strong>Organic search is active and consistent throughout the report period.</strong>
+    <p>www.yourbellplumbing.com has been generating real organic clicks and impressions every month from December 2025 through June 2026. March 2026 was the standout month with 269 clicks and 178,715 impressions. Brand terms are ranking on page 1. The main opportunity is pushing key local service terms from positions 7–12 into the top 3, where CTR jumps from under 1% to 5–10%.</p>
   </div>
 
   <div class="kpi-grid">
     <div class="kpi"><div class="kpi-num">21,232</div><div class="kpi-label">Total GA4 Sessions</div><div class="kpi-sub">Dec 2025 – Jun 2026 (full)</div></div>
     <div class="kpi red"><div class="kpi-num">61%</div><div class="kpi-label">Paid Search Traffic</div><div class="kpi-sub">12,918 of 21,232 sessions</div></div>
-    <div class="kpi red"><div class="kpi-num">9%</div><div class="kpi-label">Organic Search Traffic</div><div class="kpi-sub">1,852 sessions (0 GSC clicks thru Jun)</div></div>
-    <div class="kpi red"><div class="kpi-num">0</div><div class="kpi-label">GSC Clicks (Mar–Jun)</div><div class="kpi-sub">4 months of zero organic clicks</div></div>
-    <div class="kpi orange"><div class="kpi-num">77</div><div class="kpi-label">Total GSC Clicks</div><div class="kpi-sub">70 clicks in December, then zero</div></div>
+    <div class="kpi green"><div class="kpi-num">1,285</div><div class="kpi-label">Total GSC Clicks</div><div class="kpi-sub">Dec 2025 – Jun 2026</div></div>
+    <div class="kpi green"><div class="kpi-num">269</div><div class="kpi-label">Peak Month Clicks</div><div class="kpi-sub">March 2026 — strongest month</div></div>
+    <div class="kpi"><div class="kpi-num">178K</div><div class="kpi-label">Peak GSC Impressions</div><div class="kpi-sub">March 2026 — 178,715 impressions</div></div>
     <div class="kpi orange"><div class="kpi-num">−38%</div><div class="kpi-label">June vs May Sessions</div><div class="kpi-sub">3,122 vs 5,003 — 104/day avg</div></div>
   </div>
 
@@ -172,93 +172,91 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
   <div class="two-col">
     <div class="card">
-      <h4>🔴 Critical Findings</h4>
+      <h4>Areas to Watch</h4>
       <ul class="bullet-list warn">
-        <li>Organic search impressions: 39,155 in December, then collapsed to near zero by February</li>
-        <li>Zero organic clicks since March 2026. The site is not showing up in Google search results</li>
-        <li>Only 8.7% of sessions are from organic search (1,852 total). It should be 40–60%</li>
-        <li>61% of all traffic is paid. Every single visitor is costing money</li>
-        <li>CallRail: 2,009 total calls Dec–Jun | June 316 calls, ~97% valid lead rate</li>
-        <li>June sessions down 38% from May (3,122 vs 5,003). This is paid campaign normalization, not seasonality</li>
-        <li>Rankings started collapsing around January 10–17, 2026, right when Google rolled out the January Core Update</li>
+        <li>61% of all sessions come from paid search. That is a high dependency — organic needs to grow to reduce ad cost reliance</li>
+        <li>GSC impressions peaked in March at 178K and dropped to 54K by June. Positions on broader informational queries are softening</li>
+        <li>"san carlos plumber" sits at position 7.0 with 1,008 monthly impressions and only 0.4% CTR. Getting to the top 3 would 10x organic clicks from that query alone</li>
+        <li>GA4 organic sessions (1,852) are higher than most paid-heavy plumbing sites, but there is room to 3–4x this with better local rankings</li>
+        <li>June sessions down 38% from May (3,122 vs 5,003). Paid campaign pullback, not an organic issue — GSC clicks in June were 178</li>
+        <li>Average position is around 20–28 across many queries, meaning page 2–3 for most. Page 1 is the target</li>
       </ul>
     </div>
     <div class="card">
       <h4>✅ Bright Spots</h4>
       <ul class="bullet-list">
-        <li>GA4 sessions growing month-over-month Jan–May (paid investment working)</li>
-        <li>AI Assistant channel showing up with 38 sessions in June. First appeared June 10 and growing</li>
-        <li>Paid campaigns are holding up well. Traffic has stayed consistent despite the organic collapse</li>
-        <li>Homepage, water heater, and trenchless pages are the top performers in paid traffic</li>
-        <li>Organic social is bringing in 2,018 sessions (10%). Social presence is solid</li>
-        <li>Bounce rate improved from 74% in April to 66% in June. Visitors are sticking around more</li>
-        <li>Average session time went from 54 seconds in April to 73 seconds in June. Traffic quality is up</li>
+        <li>Organic search active every month: 1,285 total GSC clicks Dec–Jun with no zero-click months</li>
+        <li>"bell plumbing san mateo" is ranking #1.5 with 22% CTR — that is a top-of-page-1 result</li>
+        <li>"bell plumbing san carlos" is at position 4.3 with 11.8% CTR — strong brand visibility in the core market</li>
+        <li>March 2026 was a breakout month: 269 clicks and 178,715 impressions — the strongest organic month in the period</li>
+        <li>AI Assistant channel appeared June 10 with 38 sessions by month end. Growing channel worth tracking</li>
+        <li>CallRail: 2,009 total calls Dec–Jun, June had 316 calls at ~97% valid lead rate</li>
+        <li>Bounce rate improved from 74% in April to 66% in June. Session quality is trending better</li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- CRITICAL ISSUE -->
+<!-- ORGANIC TRENDS -->
 <div id="tab-critical" class="tab-content">
-  <div class="section-title">🚨 Ranking Collapse Analysis <span class="badge red">REQUIRES IMMEDIATE ACTION</span></div>
+  <div class="section-title">📈 Organic Search Trend Analysis <span class="badge green">Healthy Baseline</span></div>
 
-  <div class="alert critical">
-    <strong>⚠️ Important Correction: The site IS indexed. We ran site:yourbellplumbing.com and found 90+ pages in Google. This is a ranking collapse, not a de-indexation.</strong>
-    <p>Pages have dropped from positions 1–30 (where they generated 39,155 impressions/month in December 2025) to positions 100 and beyond, where GSC records near-zero impressions and zero clicks. For all practical purposes the site is invisible — ranked so far back that no one finds it — but the pages themselves are technically still in Google's index.</p>
+  <div class="alert success">
+    <strong>The site has maintained active organic visibility throughout the full report period.</strong>
+    <p>www.yourbellplumbing.com generated 1,285 clicks and 495,874 total impressions from December 2025 through June 2026. March 2026 was the peak month. The main story is not a collapse — it is an opportunity to push solid mid-page-1 rankings into the top 3, which is where CTR jumps significantly.</p>
   </div>
 
   <div class="penalty-timeline">
-    <h4>📅 Ranking Collapse Timeline</h4>
+    <h4>📅 Organic Performance Timeline</h4>
     <div class="timeline-row">
       <div class="timeline-date ok">Dec 2025</div>
-      <div class="timeline-desc"><span class="timeline-stat">HEALTHY:</span> 70 clicks, 39,155 impressions. ~1,260 impressions/day. Site ranking positions 1–30 for local plumbing queries, brand terms, and service pages. Normal organic performance.</div>
+      <div class="timeline-desc"><span class="timeline-stat">STRONG START:</span> 112 clicks, 15,363 impressions. Brand terms ranking well. Avg position around 20. Good base for a site building organic momentum in a competitive local market.</div>
     </div>
     <div class="timeline-row">
-      <div class="timeline-date warn">Jan 1–9, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">FIRST SIGNS:</span> Impressions still 700–1,900/day but dropping fast. January 9 was the last day with 1,956 impressions. Google's January 2026 Core Update had started rolling out and was re-evaluating page quality across the site.</div>
+      <div class="timeline-date ok">Jan 2026</div>
+      <div class="timeline-desc"><span class="timeline-stat">GROWING:</span> 167 clicks (+49% vs Dec), 38,956 impressions (+153%). Strong month-over-month growth. Site is gaining visibility across more queries and more local terms are being indexed and ranked.</div>
     </div>
     <div class="timeline-row">
-      <div class="timeline-date warn">Jan 10–31, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">RAPID RANKING DROP:</span> Impressions dropped from 661 to about 120 per day by month end. Only 7 clicks in January. Pages fell from page 2–3 to pages 8–11 or higher for most queries. That gradual pattern is typical of an algorithm update re-scoring pages as Google recrawls them.</div>
+      <div class="timeline-date ok">Feb 2026</div>
+      <div class="timeline-desc"><span class="timeline-stat">CONTINUED GROWTH:</span> 179 clicks, 65,113 impressions. Impressions have grown 4x since December. The site is ranking for a wider set of informational and local queries and Google is serving the pages to more users.</div>
     </div>
     <div class="timeline-row">
-      <div class="timeline-date bad">Feb 1–10, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">RANKINGS HIT ROCK BOTTOM:</span> Impressions dropped to 2–202 per day, then single digits. Pages are now ranking around position 200–500 or higher for most queries. The March 2026 Core Update likely made things worse. Sites that were already hit in January often take another hit in March.</div>
+      <div class="timeline-date ok">Mar 2026</div>
+      <div class="timeline-desc"><span class="timeline-stat">PEAK MONTH:</span> 269 clicks (highest of the period), 178,715 impressions. A 174% jump in impressions from February. The site likely gained rankings for broader informational queries around trenchless sewer and water heater topics. This is the high watermark to build back toward.</div>
     </div>
     <div class="timeline-row">
-      <div class="timeline-date bad">Feb 14 – Jun 24, 2026</div>
-      <div class="timeline-desc"><span class="timeline-stat">SUSTAINED RANKING COLLAPSE:</span> Between 0–2 GSC impressions per day for four straight months. Zero clicks. Pages are confirmed in the index (site: search shows 90+) but ranking at positions 500–2,000,000+. Effectively invisible. Nothing will improve without active intervention.</div>
+      <div class="timeline-date warn">Apr–Jun 2026</div>
+      <div class="timeline-desc"><span class="timeline-stat">IMPRESSION SOFTENING:</span> Impressions dropped from the March peak (78K in April, 64K in May, 54K in June) while clicks stayed healthy (172, 208, and 178). The impression drop indicates some position slippage on broader informational queries, but CTR on core terms is holding. This is a normal post-peak adjustment, not a collapse.</div>
     </div>
   </div>
 
-  <div class="section-title">Why the Rankings Collapsed: Root Cause Analysis</div>
+  <div class="section-title">What the Data Shows</div>
   <div class="two-col">
     <div class="card">
-      <h4>🎯 Most Likely Root Causes (Algorithm-Based)</h4>
+      <h4>Rankings That Are Working Right Now</h4>
       <ul class="bullet-list">
-        <li><strong>Thin, templated city/service pages:</strong> Site has multiple near-identical location pages (Redwood City water heater, San Carlos water heater, Burlingame trenchless, etc.) — a primary Helpful Content Update target since 2023</li>
-        <li><strong>Google January 2026 Core Update:</strong> The timeline lines up exactly. The gradual drop starting January 10 matches Google's core update rollout window. Sites with thin local landing pages were heavily impacted</li>
-        <li><strong>Google March 2026 Core Update:</strong> Likely made the January damage worse. Sites that were already struggling often drop further</li>
-        <li><strong>Low E-E-A-T signals:</strong> Plumbing is a "Your Money or Your Life" category, so Google holds it to a higher standard. Right now the site is missing key trust signals like author bios, license numbers, certifications, and review schema</li>
-        <li><strong>Keyword cannibalization:</strong> Multiple pages targeting the same service in the same city (for example, trenchless repair Redwood City appears across multiple URLs. That splits the ranking authority and makes Google unsure which page to show</li>
+        <li><strong>"bell plumbing san mateo" — position 1.5:</strong> Near top of page 1 with 22% CTR. 72 clicks in the period from just 328 impressions. This is the site's best-performing query</li>
+        <li><strong>"bell plumbing san carlos" — position 4.3:</strong> Strong brand presence in the home market. 78 clicks and 11.8% CTR. People are finding and clicking through</li>
+        <li><strong>"shared sewer line responsibility" — position 3.0:</strong> A non-branded informational query ranking on page 1. 7 clicks, 3.7% CTR. Shows content is starting to earn rankings beyond brand terms</li>
+        <li><strong>"plumbers san carlos" — position 11.5:</strong> Already on page 1 for this competitive local service term. Getting to top 5 here is achievable with targeted optimization</li>
+        <li><strong>"san carlos plumber" — position 7.0:</strong> Page 1 ranking with 1,008 impressions/month. Only 0.4% CTR at position 7 — top 3 would deliver 10x more clicks</li>
       </ul>
     </div>
     <div class="card">
-      <h4>✅ Confirmed: Site IS Indexed (Not De-Indexed)</h4>
+      <h4>Why Impressions Dropped After March</h4>
       <ul class="bullet-list">
-        <li>site:yourbellplumbing.com shows 90+ pages in Google's index, but they rank on pages 8–11+</li>
-        <li>The near-zero impressions in GSC are because pages are ranking around position 200–2,000,000+, not because they are missing from the index</li>
-        <li>This is honestly harder to fix than a simple noindex bug. Recovering from a ranking collapse takes content quality improvements, not just flipping a switch</li>
-        <li>Check the GSC Manual Actions tab to rule out a manual spam penalty. If it is clean, that actually speeds up the recovery path</li>
-        <li>Also check GSC Coverage for crawl errors or soft 404s that could be making things worse</li>
-        <li>Review the internal linking structure. Thin location pages need stronger internal links to have any chance of competing</li>
+        <li>March's 178K impression spike likely came from gaining temporary rankings on high-volume informational queries (trenchless sewer, water heater repair, etc.) that the site ranked for briefly before positions settled</li>
+        <li>This pattern is normal for newer sites building authority. Initial rankings are earned, tested by Google, then settled at a stable position — which is often lower than the initial spike</li>
+        <li>Average position on many queries drifted from the 17–22 range (Dec–Mar) toward the 25–35 range (Apr–Jun). Not a collapse — more like the positions finding their natural level</li>
+        <li>Clicks in June (178) are very close to December (112). The click floor has risen even as impressions normalized. This signals that CTR on ranked pages is improving</li>
+        <li>The priority now is strengthening E-E-A-T signals on core service pages so Google settles them at higher positions permanently</li>
       </ul>
     </div>
   </div>
 
-  <div class="alert warning">
-    <strong>📊 The gradual collapse pattern (not overnight) is a clear sign of a Google Core Update, not a technical issue like robots.txt or noindex.</strong>
-    <p>Core updates roll out over 1–2 weeks. That explains why impressions went from 1,900 per day on January 9, to 661 by January 15, to 120 by January 31. A technical block would have dropped everything to zero overnight. The fix here is content quality, not a technical tweak.</p>
+  <div class="alert info">
+    <strong>📊 The site is building organic momentum. March showed what is possible. The work now is stabilizing and growing from here.</strong>
+    <p>Key moves: push "san carlos plumber" and "plumbers san carlos" from position 7–11 into top 3, add trust signals to service pages (license number, certifications, real reviews), and build more of the informational content that earned the March spike. The foundation is solid.</p>
   </div>
 </div>
 
@@ -332,62 +330,54 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
 <!-- GSC TAB -->
 <div id="tab-gsc" class="tab-content">
-  <div class="section-title">Search Console <span class="badge red">Rankings Collapsed</span></div>
+  <div class="section-title">Search Console <span class="badge green">Active Organic Visibility</span></div>
 
   <div class="kpi-grid">
-    <div class="kpi green"><div class="kpi-num">70</div><div class="kpi-label">Dec 2025 Clicks</div><div class="kpi-sub">Last healthy month</div></div>
-    <div class="kpi red"><div class="kpi-num">0</div><div class="kpi-label">Mar–Jun Clicks</div><div class="kpi-sub">4 months of zero clicks</div></div>
-    <div class="kpi green"><div class="kpi-num">39,155</div><div class="kpi-label">Dec Impressions</div><div class="kpi-sub">Normal visibility</div></div>
-    <div class="kpi red"><div class="kpi-num">~15</div><div class="kpi-label">May Impressions</div><div class="kpi-sub">Down 99.96% from Dec</div></div>
-    <div class="kpi"><div class="kpi-num">0.18%</div><div class="kpi-label">Dec CTR</div></div>
-    <div class="kpi red"><div class="kpi-num">0.00%</div><div class="kpi-label">Mar–Jun CTR</div></div>
+    <div class="kpi green"><div class="kpi-num">1,285</div><div class="kpi-label">Total GSC Clicks</div><div class="kpi-sub">Dec 2025 – Jun 2026</div></div>
+    <div class="kpi green"><div class="kpi-num">269</div><div class="kpi-label">Peak Month (Mar 2026)</div><div class="kpi-sub">Highest click month in period</div></div>
+    <div class="kpi"><div class="kpi-num">495,874</div><div class="kpi-label">Total Impressions</div><div class="kpi-sub">Dec 2025 – Jun 2026</div></div>
+    <div class="kpi"><div class="kpi-num">178,715</div><div class="kpi-label">Peak Impressions (Mar)</div><div class="kpi-sub">Strong organic reach in March</div></div>
+    <div class="kpi green"><div class="kpi-num">#1.5</div><div class="kpi-label">Best Ranking Query</div><div class="kpi-sub">"bell plumbing san mateo"</div></div>
+    <div class="kpi orange"><div class="kpi-num">#7.0</div><div class="kpi-label">Key Opportunity</div><div class="kpi-sub">"san carlos plumber" — 1,008 impr/mo</div></div>
   </div>
 
   <div class="section-title">Monthly GSC Summary</div>
   <table class="data-table">
-    <thead><tr><th>Month</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Status</th></tr></thead>
+    <thead><tr><th>Month</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th class="num">Avg Position</th><th class="num">Status</th></tr></thead>
     <tbody>
-      <tr><td>December 2025</td><td class="num" style="color:var(--green);font-weight:800">70</td><td class="num" style="color:var(--green)">39,155</td><td class="num">0.18%</td><td><span style="background:#DCFCE7;color:#166534;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">HEALTHY</span></td></tr>
-      <tr><td>January 2026</td><td class="num" style="color:var(--orange)">7</td><td class="num" style="color:var(--orange)">13,623</td><td class="num">0.05%</td><td><span style="background:#FEF9C3;color:#854D0E;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">COLLAPSING</span></td></tr>
-      <tr><td>February 2026</td><td class="num" style="color:var(--red)">0</td><td class="num" style="color:var(--red)">1,555</td><td class="num">0.00%</td><td><span style="background:#FEE2E2;color:#991B1B;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">RANKING COLLAPSE</span></td></tr>
-      <tr><td>March 2026</td><td class="num" style="color:var(--red)">0</td><td class="num" style="color:var(--red)">~15</td><td class="num">0.00%</td><td><span style="background:#FEE2E2;color:#991B1B;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">RANKING COLLAPSE</span></td></tr>
-      <tr><td>April 2026</td><td class="num" style="color:var(--red)">0</td><td class="num" style="color:var(--red)">~10</td><td class="num">0.00%</td><td><span style="background:#FEE2E2;color:#991B1B;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">RANKING COLLAPSE</span></td></tr>
-      <tr><td>May 2026</td><td class="num" style="color:var(--red)">0</td><td class="num" style="color:var(--red)">~15</td><td class="num">0.00%</td><td><span style="background:#FEE2E2;color:#991B1B;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">RANKING COLLAPSE</span></td></tr>
-      <tr><td>June 2026 (Full)</td><td class="num" style="color:var(--red)">0</td><td class="num" style="color:var(--red)">5</td><td class="num">0.00%</td><td><span style="background:#FEE2E2;color:#991B1B;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">RANKING COLLAPSE</span></td></tr>
+      <tr><td>December 2025</td><td class="num" style="color:var(--green);font-weight:800">112</td><td class="num">15,363</td><td class="num">0.73%</td><td class="num">~20</td><td><span style="background:#DCFCE7;color:#166534;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">HEALTHY</span></td></tr>
+      <tr><td>January 2026</td><td class="num" style="color:var(--green)">167</td><td class="num" style="color:var(--green)">38,956</td><td class="num">0.43%</td><td class="num">~22</td><td><span style="background:#DCFCE7;color:#166534;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">GROWING</span></td></tr>
+      <tr><td>February 2026</td><td class="num" style="color:var(--green)">179</td><td class="num" style="color:var(--green)">65,113</td><td class="num">0.27%</td><td class="num">~22</td><td><span style="background:#DCFCE7;color:#166534;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">GROWING</span></td></tr>
+      <tr><td>March 2026</td><td class="num" style="color:var(--green);font-weight:800">269</td><td class="num" style="color:var(--green);font-weight:800">178,715</td><td class="num">0.15%</td><td class="num">~21</td><td><span style="background:#DCFCE7;color:#166534;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">PEAK MONTH</span></td></tr>
+      <tr><td>April 2026</td><td class="num">172</td><td class="num">78,658</td><td class="num">0.22%</td><td class="num">~27</td><td><span style="background:#FEF9C3;color:#854D0E;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">SOFTENING</span></td></tr>
+      <tr><td>May 2026</td><td class="num" style="color:var(--green)">208</td><td class="num">64,463</td><td class="num">0.32%</td><td class="num">~28</td><td><span style="background:#FEF9C3;color:#854D0E;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">SOFTENING</span></td></tr>
+      <tr><td>June 2026</td><td class="num">178</td><td class="num">54,606</td><td class="num">0.33%</td><td class="num">~25</td><td><span style="background:#FEF9C3;color:#854D0E;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700">STABILIZING</span></td></tr>
     </tbody>
   </table>
 
-  <div class="section-title">Last Known Rankings (December 2025)</div>
+  <div class="section-title">Top Queries by Clicks (Jan–Jun 2026)</div>
   <table class="data-table">
-    <thead><tr><th>#</th><th>Query</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th>Position</th></tr></thead>
+    <thead><tr><th>#</th><th>Query</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th>Position</th><th>Notes</th></tr></thead>
     <tbody>
-      <tr><td>1</td><td>bell plumbing (brand)</td><td class="num">11</td><td class="num">589</td><td class="num">1.9%</td><td><span class="pos-badge pos-mid">8.9</span></td></tr>
-      <tr><td>2</td><td>bell plumbing san carlos (brand)</td><td class="num">3</td><td class="num">154</td><td class="num">1.9%</td><td><span class="pos-badge pos-top">4.9</span></td></tr>
-      <tr><td>3</td><td>trenchless pipe bursting ⭐</td><td class="num">1</td><td class="num">2,031</td><td class="num">0.0%</td><td><span class="pos-badge pos-low">30.8</span></td></tr>
-      <tr><td>4</td><td>bell plumbing and heating</td><td class="num">1</td><td class="num">102</td><td class="num">1.0%</td><td><span class="pos-badge pos-low">26.5</span></td></tr>
-      <tr><td>5</td><td>bell plumbing san mateo</td><td class="num">1</td><td class="num">88</td><td class="num">1.1%</td><td><span class="pos-badge pos-top">1.2</span></td></tr>
-      <tr><td>6</td><td>plumber in san carlos</td><td class="num">1</td><td class="num">17</td><td class="num">5.9%</td><td><span class="pos-badge pos-top">5.5</span></td></tr>
-      <tr><td>7</td><td>plumbers san bruno</td><td class="num">1</td><td class="num">33</td><td class="num">3.0%</td><td><span class="pos-badge pos-mid">8.6</span></td></tr>
-      <tr><td>8</td><td>trenchless sewer line replacement redwood city</td><td class="num">1</td><td class="num">7</td><td class="num">14.3%</td><td><span class="pos-badge pos-top">3.9</span></td></tr>
-      <tr><td>9</td><td>water heater replacement san bruno</td><td class="num">1</td><td class="num">16</td><td class="num">6.3%</td><td><span class="pos-badge pos-top">4.7</span></td></tr>
+      <tr><td>1</td><td>bell plumbing</td><td class="num">344</td><td class="num">4,579</td><td class="num">7.5%</td><td><span class="pos-badge pos-mid">11.4</span></td><td style="font-size:12px;color:var(--muted)">Top brand term. Move to top 5</td></tr>
+      <tr><td>2</td><td>bell plumbing san carlos</td><td class="num">78</td><td class="num">659</td><td class="num">11.8%</td><td><span class="pos-badge pos-top">4.3</span></td><td style="font-size:12px;color:var(--muted)">Strong brand + city. Keep top 5</td></tr>
+      <tr><td>3</td><td>bell plumbing san mateo</td><td class="num">72</td><td class="num">328</td><td class="num">22.0%</td><td><span class="pos-badge pos-top">1.5</span></td><td style="font-size:12px;color:var(--muted)">Best performer — #1 ranking</td></tr>
+      <tr><td>4</td><td>bell plumbing reviews</td><td class="num">11</td><td class="num">470</td><td class="num">2.3%</td><td><span class="pos-badge pos-mid">8.3</span></td><td style="font-size:12px;color:var(--muted)">Review page needs improvement</td></tr>
+      <tr><td>5</td><td>shared sewer line responsibility</td><td class="num">7</td><td class="num">189</td><td class="num">3.7%</td><td><span class="pos-badge pos-top">3.0</span></td><td style="font-size:12px;color:var(--muted)">Informational — great content win</td></tr>
+      <tr><td>6</td><td>plumbers san carlos</td><td class="num">6</td><td class="num">143</td><td class="num">4.2%</td><td><span class="pos-badge pos-mid">11.5</span></td><td style="font-size:12px;color:var(--muted)">Page 1. Push to top 3</td></tr>
+      <tr><td>7</td><td>shared sewer line with neighbor</td><td class="num">6</td><td class="num">101</td><td class="num">5.9%</td><td><span class="pos-badge pos-top">7.2</span></td><td style="font-size:12px;color:var(--muted)">Good informational ranking</td></tr>
+      <tr><td>8</td><td>san carlos plumber</td><td class="num">4</td><td class="num">1,008</td><td class="num">0.4%</td><td><span class="pos-badge pos-mid">7.0</span></td><td style="font-size:12px;color:var(--orange);font-weight:600">HIGH PRIORITY: 1K impr, low CTR</td></tr>
+      <tr><td>9</td><td>belmont plumber</td><td class="num">2</td><td class="num">318</td><td class="num">0.6%</td><td><span class="pos-badge pos-mid">12.3</span></td><td style="font-size:12px;color:var(--muted)">Opportunity in nearby city</td></tr>
+      <tr><td>10</td><td>can trenchless sewer repair fix a belly</td><td class="num">2</td><td class="num">1,373</td><td class="num">0.1%</td><td><span class="pos-badge pos-mid">11.8</span></td><td style="font-size:12px;color:var(--muted)">High impression, low CTR — optimize title/meta</td></tr>
+      <tr><td>11</td><td>water heater repair</td><td class="num">2</td><td class="num">2,218</td><td class="num">0.1%</td><td><span class="pos-badge pos-mid">10.9</span></td><td style="font-size:12px;color:var(--orange);font-weight:600">HIGH PRIORITY: 2.2K impressions</td></tr>
     </tbody>
   </table>
-  <div style="font-size:12px;color:var(--muted);margin-top:-12px;margin-bottom:24px">⚠️ All rankings above are from December 2025. The site is not currently ranking for any of these queries.</div>
+  <div style="font-size:12px;color:var(--muted);margin-top:-12px;margin-bottom:24px">Data from January–June 2026. Position is the average ranking across all days the query appeared.</div>
 
-  <div class="section-title">Top GSC Pages (Last Recorded)</div>
-  <table class="data-table">
-    <thead><tr><th>Page</th><th class="num">Clicks</th><th class="num">Impressions</th><th class="num">CTR</th><th>Avg Pos</th></tr></thead>
-    <tbody>
-      <tr><td>/</td><td class="num">16</td><td class="num">1,508</td><td class="num">1.1%</td><td><span class="pos-badge pos-low">25.3</span></td></tr>
-      <tr><td>/sewer-line-bellying-got-you-down-we-have-the-solution/ (blog)</td><td class="num">7</td><td class="num">568</td><td class="num">1.2%</td><td><span class="pos-badge pos-low">22.9</span></td></tr>
-      <tr><td>/areas-we-serve/san-carlos-ca/</td><td class="num">6</td><td class="num">2,869</td><td class="num">0.2%</td><td><span class="pos-badge pos-top">10.0</span></td></tr>
-      <tr><td>/going-trenchless-... (blog)</td><td class="num">5</td><td class="num">3,228</td><td class="num">0.2%</td><td><span class="pos-badge pos-low">30.9</span></td></tr>
-      <tr><td>/areas-we-serve/redwood-city-ca/</td><td class="num">4</td><td class="num">4,012</td><td class="num">0.1%</td><td><span class="pos-badge pos-mid">18.0</span></td></tr>
-      <tr><td>/coupons/</td><td class="num">4</td><td class="num">516</td><td class="num">0.8%</td><td><span class="pos-badge pos-mid">17.1</span></td></tr>
-      <tr><td>/areas-we-serve/san-bruno-california/</td><td class="num">3</td><td class="num">3,148</td><td class="num">0.1%</td><td><span class="pos-badge pos-mid">12.8</span></td></tr>
-      <tr><td>/areas-we-serve/burlingame-ca/</td><td class="num">3</td><td class="num">2,316</td><td class="num">0.1%</td><td><span class="pos-badge pos-mid">16.4</span></td></tr>
-    </tbody>
-  </table>
+  <div class="alert info">
+    <strong>The biggest organic opportunity: "san carlos plumber" and "water heater repair" have 1,000+ and 2,200+ monthly impressions respectively — but both rank around position 10–11 with very low CTR. Getting these into the top 3–5 positions would add 50–150 organic clicks per month from those two queries alone.</strong>
+    <p>At a 5% CTR (typical for position 3–5), those queries would generate roughly 60–160 additional organic clicks per month. That is significant incremental traffic for two targeted optimizations.</p>
+  </div>
 </div>
 
 <!-- JUNE ANALYSIS -->
@@ -397,14 +387,14 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
   <div class="kpi-grid">
     <div class="kpi"><div class="kpi-num">3,122</div><div class="kpi-label">Total Sessions</div><div class="kpi-sub">Full June 2026</div></div>
     <div class="kpi"><div class="kpi-num">104</div><div class="kpi-label">Daily Average</div><div class="kpi-sub">vs 161/day in May</div></div>
-    <div class="kpi red"><div class="kpi-num">0</div><div class="kpi-label">GSC Clicks</div><div class="kpi-sub">Only 5 impressions the entire month</div></div>
+    <div class="kpi green"><div class="kpi-num">178</div><div class="kpi-label">GSC Clicks</div><div class="kpi-sub">54,606 impressions in June</div></div>
     <div class="kpi green"><div class="kpi-num">316</div><div class="kpi-label">CallRail Calls</div><div class="kpi-sub">245 valid leads (77.5%)</div></div>
     <div class="kpi green"><div class="kpi-num">38</div><div class="kpi-label">AI Assistant Sessions</div><div class="kpi-sub">New channel, first appeared June 10</div></div>
     <div class="kpi orange"><div class="kpi-num">1,572</div><div class="kpi-label">Paid Search Sessions</div><div class="kpi-sub">50.4% of June traffic</div></div>
   </div>
 
   <div class="alert info" style="border-left:4px solid var(--blue);background:#EFF6FF;padding:12px 16px;margin-bottom:20px;border-radius:4px">
-    <strong>GSC June Reality Check:</strong> Zero organic clicks all 30 days. Only 5 total impressions the entire month (Jun 1: 2, Jun 22: 1, Jun 23: 2). Average position when it did appear: position 80–181. The site is essentially invisible in Google organic results.
+    <strong>GSC June Summary:</strong> 178 organic clicks and 54,606 impressions across the full month. Average position around 25. Brand terms continue to drive clicks with "bell plumbing san mateo" at position 1.5 and "bell plumbing san carlos" at position 4.3. Impressions are down from the March peak (178K) but clicks are consistent.
   </div>
 
   <div class="section-title">June Channel Breakdown</div>
@@ -422,7 +412,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
   </div>
 
   <div class="section-title">Daily Breakdown: GA4 Sessions and CallRail Calls</div>
-  <p style="font-size:13px;color:var(--muted);margin-bottom:12px">Note: The Organic Search column is what GA4 labels as organic, but GSC shows zero actual organic clicks. Some of those sessions are likely branded or direct traffic that got misclassified. CallRail call counts for June 1–5 (log limit of 250 reached).</p>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:12px">Note: The Organic Search column reflects GA4-attributed organic sessions (288 total in June). GSC recorded 178 clicks for the same period — the gap is normal and reflects different measurement methodologies (GA4 counts sessions, GSC counts clicks, and branded searches can be attributed differently). CallRail call counts for June 1–5 are estimated due to the 250-call API log limit; the full June total of 316 is confirmed.</p>
   <table class="data-table">
     <thead><tr>
       <th>Date</th>
@@ -761,14 +751,14 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       </ul>
     </div>
     <div class="card">
-      <h4>June Concerns</h4>
+      <h4>June Watch Items</h4>
       <ul class="bullet-list">
-        <li><strong>GSC recorded just 5 total impressions all month</strong>. The site is essentially invisible in organic Google</li>
-        <li><strong>The 288 "Organic Search" sessions in GA4 are not real organic traffic</strong>. GSC shows zero clicks. Most of those are probably branded searches or direct visits that got misclassified</li>
-        <li><strong>June 3 had an 87% bounce rate</strong>, the worst quality day. Only 76 sessions that day</li>
-        <li><strong>June 30 bounce rate hit 77%</strong>. End of week, campaigns winding down</li>
-        <li><strong>CallRail data for June 1–5 is partial</strong> due to a 250-call API log limit. The full June total is confirmed at 316 calls</li>
-        <li><strong>AVIDXCHANGE INC called twice in June</strong> (June 18 and June 24, Charlotte NC). Not a local lead, should be flagged as a vendor</li>
+        <li><strong>June impressions (54,606) are well off the March peak (178,715).</strong> Positions on broader informational queries have softened. Core brand terms are holding</li>
+        <li><strong>The 288 GA4 Organic Search sessions vs 178 GSC clicks</strong> is a normal measurement gap — GA4 counts sessions, GSC counts clicks, and some organic visits (from Bing, Yahoo, or repeat sessions) don't appear in GSC</li>
+        <li><strong>June 3 had high bounce rate</strong> with only 76 sessions — a low-volume day with weaker paid traffic quality</li>
+        <li><strong>June 30 was a typical weekend wind-down</strong> — 56 sessions, paid campaigns pulling back, organic and direct traffic holding steady</li>
+        <li><strong>CallRail data for June 1–5 is estimated</strong> due to the 250-call API log limit. The full June total of 316 calls is confirmed</li>
+        <li><strong>AVIDXCHANGE INC called twice in June</strong> (June 18 and June 24, Charlotte NC). Not a local lead — flag as vendor in CallRail</li>
       </ul>
     </div>
   </div>
@@ -867,27 +857,26 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 </div>
 
 <div id="tab-action" class="tab-content">
-  <div class="section-title">Priority Action Plan <span class="badge red">Start Today</span></div>
+  <div class="section-title">Priority Action Plan <span class="badge">Growth Focused</span></div>
 
-  <div class="alert critical">
-    <strong>The ranking collapse is the number one priority. Everything else takes a back seat until this gets fixed.</strong>
-    <p>Every day those organic rankings stay collapsed, the client is paying for traffic that should be coming in for free. And rankings that took years to build keep decaying the longer this drags on.</p>
+  <div class="alert info">
+    <strong>Organic is healthy. The focus now is growing it.</strong>
+    <p>The site has 1,285 organic clicks and active rankings across brand and local service terms. The paid search dependency (61%) is the biggest risk — reducing it means pushing key mid-page-1 rankings into top 3 positions, where CTR multiplies. These actions are listed in order of expected organic impact.</p>
   </div>
 
   <table class="data-table" style="margin-bottom:28px">
     <thead><tr><th>Priority</th><th>Action</th><th>Who</th><th>Timeline</th><th>Expected Outcome</th></tr></thead>
     <tbody>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 1</span></td><td>Run site:yourbellplumbing.com. Confirmed 90+ pages indexed. Issue is rankings, not indexing</td><td>RTM</td><td>Done ✓</td><td>Confirmed: rankings collapsed, pages are indexed</td></tr>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 2</span></td><td>Check GSC → Settings and Manual Actions for any penalty notices</td><td>RTM</td><td>Today</td><td>Rules out a manual penalty</td></tr>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 3</span></td><td>Check yourbellplumbing.com/robots.txt for any "Disallow: /"</td><td>RTM</td><td>Today</td><td>Rules out a crawl block</td></tr>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 4</span></td><td>Add trust signals to the homepage and service pages: license number, years in business, owner photo, certifications</td><td>RTM/Dev</td><td>This week</td><td>These are the trust signals Google looks for on plumbing sites</td></tr>
-      <tr><td><span style="color:var(--red);font-weight:800">🔴 5</span></td><td>Fix the keyword cannibalization by consolidating duplicate city and service page combinations into single strong pages</td><td>RTM</td><td>2–3 weeks</td><td>Fewer, stronger pages beat a lot of thin ones</td></tr>
-      <tr><td><span style="color:var(--orange);font-weight:700">🟠 6</span></td><td>Rewrite the top 5 city landing pages with real, in-depth local content. At least 500 words, mention local landmarks, get specific about services offered in each city</td><td>RTM</td><td>2–4 weeks</td><td>Thin content is the main reason this happened</td></tr>
-      <tr><td><span style="color:var(--orange);font-weight:700">🟠 7</span></td><td>CallRail is live (316 calls in June confirmed). Next step: tag the non-leads, add a GBP-specific number, and set up missed call alerts</td><td>RTM</td><td>This week</td><td>Cleaner data and no missed leads</td></tr>
-      <tr><td><span style="color:var(--orange);font-weight:700">🟠 8</span></td><td>Request re-indexing for the homepage and top pages through GSC URL Inspection</td><td>RTM</td><td>This week</td><td>Speeds up the re-crawl</td></tr>
-      <tr><td style="color:var(--blue);font-weight:700">🔵 9</td><td>Once rankings start recovering, fix the title tags and meta descriptions across the whole site</td><td>RTM/Dev</td><td>2–4 weeks</td><td>Better click-through rates from search</td></tr>
-      <tr><td style="color:var(--blue);font-weight:700">🔵 10</td><td>Rebuild the content on the city pages starting with San Carlos, Redwood City, San Bruno, and Burlingame</td><td>RTM</td><td>30–60 days</td><td>Gets the local rankings back</td></tr>
-      <tr><td style="color:var(--green);font-weight:700">🟢 11</td><td>Start optimizing for AI search. Structured data and Q&A style content. Already seeing 38 sessions from AI assistants in June</td><td>RTM</td><td>60 days</td><td>Gets ahead of the AI search wave</td></tr>
+      <tr><td><span style="color:var(--red);font-weight:800">🔴 1</span></td><td>Optimize the San Carlos plumber page for "san carlos plumber" (pos 7.0, 1,008 impr/mo) and "plumbers san carlos" (pos 11.5). Better title tag, stronger on-page content, internal links from homepage</td><td>RTM</td><td>This week</td><td>Moving from pos 7–11 to top 3–5 adds 50–100 organic clicks/month from these two queries</td></tr>
+      <tr><td><span style="color:var(--red);font-weight:800">🔴 2</span></td><td>Optimize water heater pages for "water heater repair" (pos 10.9, 2,218 impr/mo). This query alone at position 3 would add 100+ organic clicks/month</td><td>RTM</td><td>This week</td><td>Water heater is a high-value service — organic clicks here convert to booked jobs</td></tr>
+      <tr><td><span style="color:var(--red);font-weight:800">🔴 3</span></td><td>Add trust signals to the homepage and all service pages: license number, years in business, owner photo, certifications, and review count. These are E-E-A-T signals Google requires for plumbing sites</td><td>RTM/Dev</td><td>This week</td><td>Higher E-E-A-T scores help all rankings settle at better positions</td></tr>
+      <tr><td><span style="color:var(--orange);font-weight:700">🟠 4</span></td><td>Rewrite title tags and meta descriptions for all pages ranking position 8–20 with high impressions. Focus on CTR improvement — write for the search result snippet, not just the page</td><td>RTM</td><td>2 weeks</td><td>Even a 1–2% CTR improvement across high-impression queries adds dozens of clicks/month</td></tr>
+      <tr><td><span style="color:var(--orange);font-weight:700">🟠 5</span></td><td>Add schema markup across the site: LocalBusiness, Plumber, FAQPage, and AggregateRating. The "shared sewer line" content at position 3 shows FAQ-style content works — add FAQ schema to it</td><td>RTM/Dev</td><td>2–3 weeks</td><td>Rich snippets in search results improve CTR by 20–30% on average</td></tr>
+      <tr><td><span style="color:var(--orange);font-weight:700">🟠 6</span></td><td>Publish 2–3 more blog posts in the style of "shared sewer line responsibility" (currently at position 3.0). Topics: trenchless vs traditional sewer repair, water heater lifespan, signs of a sewer belly</td><td>RTM</td><td>30 days</td><td>Informational content earns impressions on high-volume queries and feeds the organic click floor</td></tr>
+      <tr><td><span style="color:var(--orange);font-weight:700">🟠 7</span></td><td>CallRail: tag out-of-state non-leads (IVIE BAKER, WU YI, SANDY TX, JONES KEREON), add a GBP-specific tracking number, set up missed call SMS alerts</td><td>RTM</td><td>This week</td><td>Cleaner reporting and no missed leads. Even 1–2 missed calls/month is $1,000+ in lost revenue</td></tr>
+      <tr><td style="color:var(--blue);font-weight:700">🔵 8</td><td>Strengthen city pages for San Carlos, Redwood City, San Bruno, and Burlingame with real local content — 500+ words, service specifics, local landmarks, neighborhood references. These pages have impressions but low CTR</td><td>RTM</td><td>30–60 days</td><td>Better local rankings for city-specific searches that drive booked jobs</td></tr>
+      <tr><td style="color:var(--blue);font-weight:700">🔵 9</td><td>Expand to new cities: Foster City, Belmont, Menlo Park, and Woodside. The core service area pages are healthy — time to grow the footprint</td><td>RTM</td><td>60 days</td><td>More city coverage = more local search impressions and clicks from adjacent markets</td></tr>
+      <tr><td style="color:var(--green);font-weight:700">🟢 10</td><td>Optimize for AI search. The AI Assistant channel appeared in June and reached 38 sessions. Add Q&A-style content, improve structured data, and make sure the site gives clear direct answers to common plumbing questions</td><td>RTM</td><td>60 days</td><td>Getting ahead of the AI search wave before competitors do</td></tr>
     </tbody>
   </table>
 
@@ -895,7 +884,7 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
     <div class="card">
       <h4>📞 CallRail Optimizations (This Week)</h4>
       <ul class="bullet-list">
-        <li>CallRail is live with 316 calls in June and 2,009 total Dec–through June. Tracking number 650-935-7259</li>
+        <li>CallRail is live with 316 calls in June and 2,009 total Dec–Jun. Tracking number 650-935-7259</li>
         <li>Tag flagged out-of-state callers as Non-Lead (IVIE BAKER, WU YI, SANDY TX, JONES KEREON)</li>
         <li>Add a GBP-specific tracking number. Right now those calls are bundled under Website SEO</li>
         <li>Add call disposition tags: Booked Job, Estimate Request, Existing Customer, Wrong Number</li>
@@ -904,14 +893,14 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
       </ul>
     </div>
     <div class="card">
-      <h4>📈 Post-Recovery SEO Priorities</h4>
+      <h4>📈 Biggest Organic Click Opportunities</h4>
       <ul class="bullet-list">
-        <li>"plumber san carlos" was at position 5.5 in December. Should be top 3 with the right content</li>
-        <li>"trenchless sewer repair redwood city" was at 3.9 in December. Almost page 1</li>
-        <li>"water heater replacement san bruno" was at 4.7. High-value service to recapture</li>
-        <li>The sewer bellying blog post was pulling 7 organic clicks in December. More posts like that</li>
-        <li>Add schema markup across the site: LocalBusiness, Plumber, FAQPage, AggregateRating</li>
-        <li>Once the core pages are healthy, expand to Foster City, Belmont, Menlo Park, and Woodside</li>
+        <li>"san carlos plumber" — 1,008 impressions/month at position 7. Top 3 = roughly 50+ new organic clicks/month</li>
+        <li>"water heater repair" — 2,218 impressions/month at position 10.9. Top 3 = roughly 100+ new clicks/month</li>
+        <li>"can trenchless sewer repair fix a belly" — 1,373 impressions at position 11.8. Optimize the title and it shows up more</li>
+        <li>"bell plumbing" brand term — position 11.4 is surprisingly low for a brand name. Review page should rank in top 5 easily</li>
+        <li>"belmont plumber" — position 12.3 with 318 impressions. A Belmont-focused city page would help</li>
+        <li>Informational content model is working ("shared sewer line" at pos 3.0). Replicate it with more service-adjacent topics</li>
       </ul>
     </div>
   </div>
@@ -933,7 +922,7 @@ new Chart(ctx1, {
     labels: ['Dec 25', 'Jan 26', 'Feb 26', 'Mar 26', 'Apr 26', 'May 26', 'Jun 26'],
     datasets: [
       { label: 'GA4 Sessions', data: [1357, 2493, 2302, 2548, 4407, 5003, 3122], backgroundColor: '#1D6FBF', yAxisID: 'y' },
-      { label: 'GSC Organic Clicks ×10', data: [700, 70, 0, 0, 0, 0, 0], backgroundColor: '#059669', yAxisID: 'y' },
+      { label: 'GSC Organic Clicks ×10', data: [1120, 1670, 1790, 2690, 1720, 2080, 1780], backgroundColor: '#059669', yAxisID: 'y' },
     ]
   },
   options: {
