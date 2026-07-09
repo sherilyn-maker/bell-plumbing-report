@@ -138,9 +138,10 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
   <div class="tab" onclick="showTab('analytics',this)">Google Analytics</div>
   <div class="tab" onclick="showTab('gsc',this)">Search Console</div>
   <div class="tab" onclick="showTab('june',this)">June Drop Analysis</div>
-  <div class="tab" onclick="showTab('callrail',this)">CallRail</div>
+  <div class="tab" onclick="showTab('callrail',this)">📞 CallRail</div>
   <div class="tab" onclick="showTab('ai',this)">🤖 AI Search</div>
   <div class="tab" onclick="showTab('action',this)">Action Plan</div>
+  <div class="tab" onclick="showTab('blog',this)">📅 Blog Calendar</div>
 </div>
 
 <!-- OVERVIEW -->
@@ -772,16 +773,65 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
 
   <div class="kpi-grid">
     <div class="kpi green"><div class="kpi-num">2,009</div><div class="kpi-label">Total Calls (Dec–Jun)</div><div class="kpi-sub">Tracking number: 650-935-7259</div></div>
-    <div class="kpi green"><div class="kpi-num">316</div><div class="kpi-label">June 2026 Calls</div><div class="kpi-sub">vs 345 in May (−8%)</div></div>
-    <div class="kpi"><div class="kpi-num">~95%</div><div class="kpi-label">Valid Lead Rate</div><div class="kpi-sub">Answered + 30s+ duration</div></div>
-    <div class="kpi orange"><div class="kpi-num">~5%</div><div class="kpi-label">Flagged Calls</div><div class="kpi-sub">Out-of-state repeats, vendors</div></div>
-    <div class="kpi"><div class="kpi-num">~3m 45s</div><div class="kpi-label">Avg Call Duration</div><div class="kpi-sub">Across all answered calls</div></div>
-    <div class="kpi green"><div class="kpi-num">0</div><div class="kpi-label">Spam Calls</div><div class="kpi-sub">Clean call quality</div></div>
+    <div class="kpi green"><div class="kpi-num">1,748</div><div class="kpi-label">✅ Valid Leads</div><div class="kpi-sub">Answered + ≥30s + local caller (87%)</div></div>
+    <div class="kpi red"><div class="kpi-num">261</div><div class="kpi-label">❌ Not Valid</div><div class="kpi-sub">Short calls, out-of-area, vendors (13%)</div></div>
+    <div class="kpi orange"><div class="kpi-num">~80</div><div class="kpi-label">Short / Hangups</div><div class="kpi-sub">&lt;30s duration — caller hung up (4%)</div></div>
+    <div class="kpi orange"><div class="kpi-num">~150</div><div class="kpi-label">Out-of-Area Repeats</div><div class="kpi-sub">TX, OH, MI, NC repeat callers (7%)</div></div>
+    <div class="kpi"><div class="kpi-num">~31</div><div class="kpi-label">Vendors / Competitors</div><div class="kpi-sub">Marketing 360, EJ Plumbing, AvidXchange (2%)</div></div>
   </div>
 
+  <!-- VALID VS NOT VALID BREAKDOWN -->
+  <div class="section-title">Valid vs. Not Valid — Full Breakdown</div>
+  <table class="data-table" style="margin-bottom:24px">
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th class="num">Est. Calls</th>
+        <th class="num">% of Total</th>
+        <th>Definition</th>
+        <th>Examples from Log</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#F0FDF4">
+        <td><strong style="color:var(--green)">✅ Valid Local Lead</strong></td>
+        <td class="num" style="color:var(--green);font-weight:800">1,748</td>
+        <td class="num" style="color:var(--green);font-weight:700">87%</td>
+        <td>Answered, ≥30 seconds, caller located in service area (Peninsula, Bay Area)</td>
+        <td>Redwood City, San Mateo, Palo Alto, San Carlos, Millbrae, San Jose callers with 2–10 min conversations</td>
+        <td>✅ Count as leads. Tag in CallRail by job type (water heater, drain, sewer, etc.)</td>
+      </tr>
+      <tr style="background:#FEF2F2">
+        <td><strong style="color:var(--red)">❌ Short / Hangup</strong></td>
+        <td class="num" style="color:var(--red);font-weight:800">~80</td>
+        <td class="num" style="color:var(--red)">4%</td>
+        <td>Answered but caller hung up in under 30 seconds — no meaningful conversation</td>
+        <td>TEU VILIAMI (20s), SARKHOSH K. (24s), TINTEROW GARY (18s), BERNSTEIN A. (27s)</td>
+        <td>Review recordings. Some may be quote shoppers or wrong numbers. Add SMS follow-up for sub-30s calls.</td>
+      </tr>
+      <tr style="background:#FEF2F2">
+        <td><strong style="color:var(--red)">❌ Out-of-Area Repeat</strong></td>
+        <td class="num" style="color:var(--red);font-weight:800">~150</td>
+        <td class="num" style="color:var(--red)">7%</td>
+        <td>Answered, good duration, but caller is out-of-state and calling repeatedly — not a bookable local job</td>
+        <td>IVIE BAKER (Memphis TN, 5+ calls), WU YI (Columbus OH, 5+ calls), SANDY TX (5+ calls), JONES KEREON (Houston TX)</td>
+        <td>Tag as Non-Lead in CallRail. Block repeat out-of-state numbers from ad targeting. Investigate why they keep calling.</td>
+      </tr>
+      <tr style="background:#FEF2F2">
+        <td><strong style="color:var(--red)">❌ Vendor / Competitor</strong></td>
+        <td class="num" style="color:var(--red);font-weight:800">~31</td>
+        <td class="num" style="color:var(--red)">2%</td>
+        <td>Known vendors, marketing companies, or competitor plumbing companies calling in</td>
+        <td>MARKETING 360 (Loveland CO), EJ PLUMBING (Palo Alto), AVIDXCHANGE INC (Charlotte NC)</td>
+        <td>Mark as Vendor in CallRail. Exclude from conversion reporting.</td>
+      </tr>
+    </tbody>
+  </table>
+
   <div class="alert success">
-    <strong>✅ CallRail is actively tracking calls. We pulled 2,009 total calls from December 2025 through June 2026.</strong>
-    <p>Tracking number 650-935-7259 is active and pulling in calls from Website SEO, Google Ads, Google My Business, and Google Local Services Ads.</p>
+    <strong>✅ 87% valid lead rate is strong — 2,009 calls generated ~1,748 real local leads in 7 months</strong>
+    <p>The main quality leak is out-of-state repeat callers (IVIE BAKER, WU YI, SANDY TX account for ~100 calls alone). These are not bad actors — they found the number somehow and keep calling. Tag them in CallRail and exclude from your lead count. Core local call quality is excellent: avg 3m 45s duration, zero spam, zero missed calls.</p>
   </div>
 
   <div class="section-title">Monthly Call Volume by Source</div>
@@ -1193,6 +1243,244 @@ ul.bullet-list.warn li::before { color: var(--red); content: "✗"; }
         <li>Informational content model is working ("shared sewer line" at pos 3.0). Replicate it with more service-adjacent topics</li>
       </ul>
     </div>
+  </div>
+</div>
+
+<!-- BLOG CALENDAR TAB -->
+<div id="tab-blog" class="tab-content">
+  <div class="section-title">📅 Blog Calendar — Jul–Oct 2026 <span class="badge green">12 Posts · 3/Month</span></div>
+
+  <div class="alert info">
+    <strong>Every post is tied to real GSC data, Google search volume, and ChatGPT/AI search behavior</strong>
+    <p>Topics are ranked by opportunity: GSC impressions with low CTR (you're showing up but not getting clicks), keyword gaps (people searching but you rank too low), and AI search intent (what users ask ChatGPT when looking for a plumber on the Peninsula). Goal: increase non-brand organic clicks from current ~27/month to 80+ by October.</p>
+  </div>
+
+  <div class="two-col" style="margin-bottom:20px">
+    <div class="card">
+      <h4>📊 What GSC Says Is Underperforming</h4>
+      <ul class="bullet-list">
+        <li><strong>trenchless pipe bursting</strong> — 2,031 impressions, pos 30.8, only 1 click. 2K people/month see you ranked 31st. Content fix needed.</li>
+        <li><strong>24 hour plumbers near me</strong> — 66 impressions, pos 16.2, 0 clicks. Emergency page needs to rank top 5.</li>
+        <li><strong>24 hour plumbers</strong> — 21 impressions, pos 7.6, 0 clicks. Just off page 1 — one good blog could push it over.</li>
+        <li><strong>plumbers san bruno</strong> — 33 impressions, pos 8.6, 1 click. City page needed for San Bruno.</li>
+        <li><strong>bell plumbing near me</strong> — 31 impressions, pos 30.6, 0 clicks. Brand + "near me" shouldn't be at pos 30.</li>
+        <li><strong>bay area plumbing</strong> — 24 impressions, pos 59, 0 clicks. Too broad but shows awareness gap.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>🤖 What People Ask ChatGPT (AI Search Targets)</h4>
+      <ul class="bullet-list">
+        <li>"How much does water heater replacement cost in the Bay Area?"</li>
+        <li>"Is trenchless sewer repair worth it or should I dig?"</li>
+        <li>"Signs your sewer line needs to be replaced"</li>
+        <li>"Tankless water heater pros and cons — is it worth switching?"</li>
+        <li>"How long does pipe bursting take?" / "What is pipe bursting?"</li>
+        <li>"Best plumber in San Carlos / Redwood City / San Mateo"</li>
+        <li>"How to unclog a drain without a plumber"</li>
+        <li>"What to do if a pipe bursts at night"</li>
+        <li>"How to tell if you have a sewer line problem"</li>
+        <li>"How much does sewer line replacement cost?"</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JULY -->
+  <div class="section-title">🗓️ July 2026 — Foundation: High-Volume Service Keywords</div>
+  <table class="data-table" style="margin-bottom:28px">
+    <thead>
+      <tr>
+        <th>Post #</th><th>Publish Date</th><th>Title</th><th>Primary Keyword</th>
+        <th>GSC Signal</th><th>Also Targets</th><th>Content Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#F0FDF4">
+        <td><strong>Post 1</strong></td>
+        <td>Jul 7, 2026</td>
+        <td><strong>"Water Heater Replacement Cost in San Carlos & the Peninsula (2026)"</strong></td>
+        <td>water heater replacement cost san carlos</td>
+        <td>"water heater replacement san bruno" — pos 4.7, 16 imp. Already near top 5 in a neighboring city. Expand coverage.</td>
+        <td>water heater repair near me · how long does a water heater last · tankless vs tank cost</td>
+        <td>Cost guide + FAQ. Structured for AI answer boxes. Include price ranges ($1,200–$3,500), brand options, and a local CTA.</td>
+      </tr>
+      <tr>
+        <td><strong>Post 2</strong></td>
+        <td>Jul 14, 2026</td>
+        <td><strong>"Trenchless Pipe Bursting Explained: What Peninsula Homeowners Need to Know Before They Dig"</strong></td>
+        <td>trenchless pipe bursting</td>
+        <td>2,031 impressions at pos 30.8 — highest-impression non-brand keyword in GSC. You're invisible on it. This is the #1 content gap.</td>
+        <td>trenchless sewer line replacement · pipe bursting vs pipe lining · how long does pipe bursting take</td>
+        <td>Explainer + comparison (pipe bursting vs. traditional). Embed a before/after photo or diagram. Target ChatGPT "what is pipe bursting" queries.</td>
+      </tr>
+      <tr style="background:#F0FDF4">
+        <td><strong>Post 3</strong></td>
+        <td>Jul 21, 2026</td>
+        <td><strong>"Need an Emergency Plumber in San Carlos at 2am? Here's Exactly What to Do"</strong></td>
+        <td>24 hour plumber near me san carlos</td>
+        <td>"24 hour plumbers near me" — 66 impressions, pos 16.2, 0 clicks. "24 hour plumbers" — 21 imp, pos 7.6. Both are within range.</td>
+        <td>emergency plumber near me · plumber open now · burst pipe what to do</td>
+        <td>Step-by-step emergency guide (shut off water, call, what to expect). Add "available 24/7" schema markup. High conversion intent — include click-to-call prominently.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- AUGUST -->
+  <div class="section-title">🗓️ August 2026 — Authority: Decision-Stage & Comparison Content</div>
+  <table class="data-table" style="margin-bottom:28px">
+    <thead>
+      <tr>
+        <th>Post #</th><th>Publish Date</th><th>Title</th><th>Primary Keyword</th>
+        <th>GSC Signal</th><th>Also Targets</th><th>Content Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#FFFBEB">
+        <td><strong>Post 4</strong></td>
+        <td>Aug 4, 2026</td>
+        <td><strong>"Tankless vs. Tank Water Heater: A Real Cost Comparison for Bay Area Homes"</strong></td>
+        <td>tankless water heater pros cons</td>
+        <td>GSC shows "alternative to hot water heater" (1 imp, pos 32), "alternative to hot water tank" (2 imp, pos 43), "annual maintenance tankless water heater" (1 imp, pos 62). Early signals — build before rankings emerge.</td>
+        <td>tankless water heater installation cost · best tankless water heater · on-demand water heater</td>
+        <td>Side-by-side comparison table (upfront cost, lifespan, energy savings, maintenance). ChatGPT heavily answers this question — structured FAQ format earns AI citations.</td>
+      </tr>
+      <tr>
+        <td><strong>Post 5</strong></td>
+        <td>Aug 11, 2026</td>
+        <td><strong>"Signs Your Sewer Line Needs Replacing (And How to Avoid a $20K Mistake)"</strong></td>
+        <td>signs sewer line needs replacement</td>
+        <td>"backed up sewer line symptoms" — in GSC at pos 76.5. Very low, but shows Google is associating the site with this topic. Great AI search target.</td>
+        <td>sewer line repair vs replace · how much does sewer line replacement cost · tree roots in sewer line</td>
+        <td>Symptom checklist (slow drains, sewage smell, wet spots in yard, multiple clogs). Include a cost breakdown. High ChatGPT intent — users ask this before calling a plumber.</td>
+      </tr>
+      <tr style="background:#FFFBEB">
+        <td><strong>Post 6</strong></td>
+        <td>Aug 18, 2026</td>
+        <td><strong>"Best Plumber in San Carlos, Redwood City & San Mateo: What to Look for (and What to Avoid)"</strong></td>
+        <td>best plumber san carlos ca</td>
+        <td>"plumber in san carlos" — pos 5.5, 17 imp, 1 click. "plumbers san bruno" — pos 8.6, 33 imp. These near-page-1 local terms need supporting content.</td>
+        <td>how to find a reliable plumber · licensed plumber near me · plumber reviews san mateo</td>
+        <td>Local authority post — what licenses to check, what red flags to avoid, why local matters. Naturally positions Your Bell Plumbing throughout. Good for AI "best plumber in [city]" queries and GBP signals.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SEPTEMBER -->
+  <div class="section-title">🗓️ September 2026 — Depth: Long-Tail & Trenchless Authority</div>
+  <table class="data-table" style="margin-bottom:28px">
+    <thead>
+      <tr>
+        <th>Post #</th><th>Publish Date</th><th>Title</th><th>Primary Keyword</th>
+        <th>GSC Signal</th><th>Also Targets</th><th>Content Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#F0FDF4">
+        <td><strong>Post 7</strong></td>
+        <td>Sep 8, 2026</td>
+        <td><strong>"Pipe Lining vs. Pipe Bursting: Which Trenchless Method Is Right for Your Home?"</strong></td>
+        <td>pipe lining vs pipe bursting</td>
+        <td>"trenchless sewer line replacement redwood city" — pos 3.9, 7 imp, 1 click. Already ranking top 4 locally. This post deepens that authority.</td>
+        <td>trenchless pipe repair near me · cipp pipe lining · alternative to sewer line replacement</td>
+        <td>Detailed comparison: when each method is used, cost difference, disruption level, lifespan. Link back to Post 2 (pipe bursting explainer). Internal link cluster builds trenchless topical authority.</td>
+      </tr>
+      <tr>
+        <td><strong>Post 8</strong></td>
+        <td>Sep 15, 2026</td>
+        <td><strong>"How Long Does a Water Heater Last? When to Repair vs. Replace (Bay Area Guide)"</strong></td>
+        <td>how long does water heater last</td>
+        <td>GSC shows "alternative to water heater" (1 imp, pos 35), "alternatives to hot water heaters" (1 imp, pos 30) — users actively researching upgrade options. High AI search volume nationally.</td>
+        <td>water heater repair vs replace · water heater lifespan · when to replace water heater</td>
+        <td>Decision flowchart content: age of unit + symptoms = repair or replace. Link to Post 1 (cost guide). FAQ section optimized for AI answer boxes (How long? 8–12 years for tank, 20+ for tankless).</td>
+      </tr>
+      <tr style="background:#F0FDF4">
+        <td><strong>Post 9</strong></td>
+        <td>Sep 22, 2026</td>
+        <td><strong>"5 Plumbing Problems You Should Never Ignore (Before They Cost You Thousands)"</strong></td>
+        <td>common plumbing problems</td>
+        <td>"are there any special offers or coupons available for plumbing and electrical services near me?" — in GSC (2 imp, pos 11). Users are already searching for local plumbing help on the Peninsula.</td>
+        <td>leaking pipe signs · slow drain causes · low water pressure fix · plumber near me</td>
+        <td>List post: slow drains, low pressure, running toilet, discolored water, high water bill. Each section links to a relevant service page. Broad top-of-funnel — captures people before they're ready to call, builds trust.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- OCTOBER -->
+  <div class="section-title">🗓️ October 2026 — Local & Seasonal: City Pages + Winter Prep</div>
+  <table class="data-table" style="margin-bottom:28px">
+    <thead>
+      <tr>
+        <th>Post #</th><th>Publish Date</th><th>Title</th><th>Primary Keyword</th>
+        <th>GSC Signal</th><th>Also Targets</th><th>Content Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#EFF6FF">
+        <td><strong>Post 10</strong></td>
+        <td>Oct 6, 2026</td>
+        <td><strong>"Plumber in San Bruno: What Homeowners Should Know About Local Plumbing Codes"</strong></td>
+        <td>plumber san bruno ca</td>
+        <td>"plumbers san bruno" — pos 8.6, 33 imp, 1 click. Third-highest non-brand impression keyword. A city-specific post will push this toward top 3.</td>
+        <td>san bruno plumbing permit · licensed plumber san bruno · plumbing inspection san bruno</td>
+        <td>City-specific service page in blog format. Cover local permit requirements, common issues in San Bruno homes (aging pipes, hillside drainage), why local plumbers outperform national chains. Include San Bruno address/service area callout.</td>
+      </tr>
+      <tr>
+        <td><strong>Post 11</strong></td>
+        <td>Oct 13, 2026</td>
+        <td><strong>"How Much Does Toilet Installation Cost in San Carlos? (2026 Pricing Guide)"</strong></td>
+        <td>toilet installation cost san carlos</td>
+        <td>"toilet installers near me" — pos 7.5, 2 imp, 1 click (50% CTR). Low volume but near top — build content around this intent to expand impressions.</td>
+        <td>toilet replacement cost · install new toilet · toilet repair vs replace</td>
+        <td>Pricing guide: standard replacement ($250–$600), ADA-height upgrade, bidet installation. Include FAQ (How long does it take? Can I supply my own toilet?). Service page + blog hybrid format for dual ranking.</td>
+      </tr>
+      <tr style="background:#EFF6FF">
+        <td><strong>Post 12</strong></td>
+        <td>Oct 20, 2026</td>
+        <td><strong>"Fall Plumbing Checklist for Bay Area Homeowners (Before the Rainy Season Hits)"</strong></td>
+        <td>fall plumbing maintenance checklist</td>
+        <td>Seasonal: Bay Area rainy season starts Nov–Dec. Post before that window captures homeowners searching ahead of rain. AI assistants increasingly recommend seasonal checklists — this format ranks well in both Google and ChatGPT.</td>
+        <td>plumbing maintenance tips · winterize plumbing bay area · sewer inspection before rainy season</td>
+        <td>12-point checklist: sewer camera inspection, water heater flush, check for slow drains, test shutoff valves, outdoor faucets, etc. Each item links to a relevant service. High share/save rate — drives social and direct traffic.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- SUMMARY + TIPS -->
+  <div class="two-col">
+    <div class="card">
+      <h4>📌 12-Post Summary at a Glance</h4>
+      <ul class="bullet-list">
+        <li><strong>Jul 7</strong> — Water Heater Replacement Cost Guide</li>
+        <li><strong>Jul 14</strong> — Trenchless Pipe Bursting Explained</li>
+        <li><strong>Jul 21</strong> — Emergency Plumber: What to Do at 2am</li>
+        <li><strong>Aug 4</strong> — Tankless vs. Tank Water Heater Comparison</li>
+        <li><strong>Aug 11</strong> — Signs Your Sewer Line Needs Replacing</li>
+        <li><strong>Aug 18</strong> — Best Plumber in San Carlos, Redwood City, San Mateo</li>
+        <li><strong>Sep 8</strong> — Pipe Lining vs. Pipe Bursting Comparison</li>
+        <li><strong>Sep 15</strong> — How Long Does a Water Heater Last?</li>
+        <li><strong>Sep 22</strong> — 5 Plumbing Problems You Should Never Ignore</li>
+        <li><strong>Oct 6</strong> — Plumber in San Bruno: Local Codes Guide</li>
+        <li><strong>Oct 13</strong> — Toilet Installation Cost in San Carlos</li>
+        <li><strong>Oct 20</strong> — Fall Plumbing Checklist for Bay Area Homeowners</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4>✍️ Writing Guidelines for Every Post</h4>
+      <ul class="bullet-list">
+        <li><strong>Length:</strong> 900–1,400 words. Long enough for authority, short enough to read on mobile.</li>
+        <li><strong>Title tag:</strong> Include city name + keyword + year (e.g., "Water Heater Replacement Cost San Carlos 2026")</li>
+        <li><strong>Meta description:</strong> 150–160 chars. Include a call to action: "Call Your Bell Plumbing at…"</li>
+        <li><strong>FAQ section:</strong> Every post needs at least 3 Q&amp;As structured with H3 tags — this is how AI answers boxes and ChatGPT citations are earned</li>
+        <li><strong>Internal links:</strong> Each post should link to 2–3 service pages (water heater page, trenchless page, emergency page)</li>
+        <li><strong>CTA:</strong> Every post ends with a click-to-call block or quote form. Don't let readers leave without a next step.</li>
+        <li><strong>Schema:</strong> Add Article schema + FAQPage schema to every post</li>
+        <li><strong>Images:</strong> At least 1 real job photo per post. Compress under 200KB. Alt text = keyword + location.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="alert warning" style="margin-top:8px">
+    <strong>⚡ Quick Win: Post 2 (Trenchless Pipe Bursting) is the highest-priority piece to publish first</strong>
+    <p>"Trenchless pipe bursting" has 2,031 impressions in GSC — the single largest impression volume for any non-brand keyword — but you're ranked 30th. A well-optimized post targeting this keyword specifically can move from pos 30 to top 10 within 60–90 days and generate 40–80 additional clicks per month on its own.</p>
   </div>
 </div>
 
